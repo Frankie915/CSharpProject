@@ -16,8 +16,8 @@ namespace Console.PracticeManagement.Models
 
         public Boolean IsActive { get; set; }
 
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
-        public string Notes { get; set; }
+        public string? Notes { get; set; }
     }
 }
