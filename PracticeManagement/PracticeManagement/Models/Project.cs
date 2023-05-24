@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Console.PracticeManagement.Models
 {
-    public class Project
+    public class Project : IEquatable<Project>
     {
         public int Id { get; set; }
         public DateTime OpenDate { get; set; }
@@ -14,6 +14,8 @@ namespace Console.PracticeManagement.Models
         public DateTime CloseDate { get; set; }
 
         public Boolean IsActive { get; set; }
+
+        
 
         public string? ShortName { get; set; }
         

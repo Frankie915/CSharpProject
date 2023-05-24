@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Console.PracticeManagement.Models
 {
-    public class Client
+    public class Client : IEquatable<Client>
     {
         public int Id { get; set; }
 
@@ -15,6 +15,12 @@ namespace Console.PracticeManagement.Models
         public DateTime CloseDate { get; set; }
 
         public Boolean IsActive { get; set; }
+
+        public bool Equals(Client other)
+        {
+            if (other == null) return false;
+            return (this.Id.Equals(other.Id));
+        }
 
         public string? Name { get; set; }
 
