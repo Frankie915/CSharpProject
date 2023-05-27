@@ -11,7 +11,6 @@ namespace PracticeManagement // Note: actual namespace depends on the project na
         {
            
             var projects = new List<Project>();
-            var customers = new List<Client>();
             while (true)
             {
                 Console.WriteLine("P. Projects");
@@ -22,11 +21,11 @@ namespace PracticeManagement // Note: actual namespace depends on the project na
 
                 if (choice.Equals("P", StringComparison.InvariantCultureIgnoreCase))
                 {
-                    ProjectMenu(customers, projects);
+                    ProjectMenu();
                 }
                 else if(choice.Equals("C", StringComparison.InvariantCultureIgnoreCase))
                 {
-                    ClientMenu(customers, projects);
+                    ClientMenu();
                 }
                 else if(choice.Equals("Q", StringComparison.InvariantCultureIgnoreCase))
                 {
@@ -35,9 +34,10 @@ namespace PracticeManagement // Note: actual namespace depends on the project na
             }
         }
 
-        static void ProjectMenu(List<Client> customers, List<Project> projects)
+        static void ProjectMenu()
         {
-
+            var clientService = ClientService.Current;
+            var projectService = ProjectService.Current;
             while(true)
             {
                 Console.WriteLine("C. Create a Project");
@@ -47,47 +47,40 @@ namespace PracticeManagement // Note: actual namespace depends on the project na
                 Console.WriteLine("M. Main Menu");
 
                 var choice = Console.ReadLine() ?? string.Empty;
-                int ClientId;
                 if (choice.Equals("C", StringComparison.InvariantCultureIgnoreCase))
                 {//create client
                     Console.WriteLine("Id: ");
                     var Id = int.Parse(Console.ReadLine() ?? "0");
-
-                    
-                    if(customers.Count == 0)
+                    Console.WriteLine("Client ID: ");
+                    var ClientId = int.Parse(Console.ReadLine() ?? "0");
+                    if(projectService.Get(ClientId) == null)
                     {
-                        Console.WriteLine("No existing clients... Please add a client, then update this project's client ID");
+                        Console.WriteLine("Client does not exist... please update project with an existing client, or make the client first");
                         ClientId = 0;
                     }
-                    else
-                    {
-                        Console.WriteLine("Client ID: ");
-                        ClientId = int.Parse(Console.ReadLine() ?? "0");
-                    }
-
-                    projects.Add(new Project { Id = Id, OpenDate = DateTime.Today, ClientId = ClientId });
+                    projectService.Add(new Project { Id = Id, OpenDate = DateTime.Today, ClientId = ClientId });
 
                 }
                 else if (choice.Equals("R", StringComparison.InvariantCultureIgnoreCase))
                 {// Read clients
 
-                    projects.ForEach(Console.WriteLine);
+                    projectService.Read();
 
                 }
                 else if (choice.Equals("U", StringComparison.InvariantCultureIgnoreCase))
                 {
-                   
+                   /*
                     if (projects.Count == 0)
                     {
                         Console.WriteLine("Project list is empty...");
                         continue;
                     }
-
+                   */
                     Console.WriteLine("Which project should be updated?");
-                    projects.ForEach(Console.WriteLine);
+                    projectService.Read();
                     var updateChoice = int.Parse(Console.ReadLine() ?? "0");
 
-                    var projectToUpdate = projects.FirstOrDefault(s => s.Id == updateChoice);
+                    var projectToUpdate = projectService.Get(updateChoice);
                     if (projectToUpdate != null)
                     {
                         Console.WriteLine("What is the project's updated Client Id?");
@@ -97,21 +90,18 @@ namespace PracticeManagement // Note: actual namespace depends on the project na
                 }
                 else if (choice.Equals("D", StringComparison.InvariantCultureIgnoreCase))
                 {
-                    Console.WriteLine(projects.Count <= 0);
-                    if(projects.Count == 0)
+                    //Console.WriteLine(projects.Count <= 0);
+                    /*if(projects.Count == 0)
                     {
                         Console.WriteLine("Project list is empty...");
                         continue;
                     }
+                    */
                     Console.WriteLine("Which project should be deleted?");
-                    projects.ForEach(Console.WriteLine);
+                    projectService.Read();
                     var deleteChoice = int.Parse(Console.ReadLine() ?? "0");
 
-                    var projectToRemove = projects.FirstOrDefault(s => s.Id == deleteChoice);
-                    if (projectToRemove != null)
-                    {
-                        projects.Remove(projectToRemove);
-                    }
+                    projectService.Delete(deleteChoice);
 
 
                 }
@@ -123,8 +113,9 @@ namespace PracticeManagement // Note: actual namespace depends on the project na
             
 
         }
-        static void ClientMenu(List<Client> customers, List<Project> projects)
+        static void ClientMenu()
         {
+            var clientService = ClientService.Current;
             while (true)
             {
                 Console.WriteLine("C. Create a Client");
@@ -146,27 +137,27 @@ namespace PracticeManagement // Note: actual namespace depends on the project na
                     Console.WriteLine("Notes: ");
                     var notes = Console.ReadLine();
 
-                    customers.Add(new Client { Id = Id, Name = name ?? "Unknown", Notes = notes ?? string.Empty });
+                    clientService.Add(new Client { Id = Id, Name = name ?? "Unknown", Notes = notes ?? string.Empty });
 
                 } else if (choice.Equals("R", StringComparison.InvariantCultureIgnoreCase))
                 {// Read clients
 
-                    customers.ForEach(Console.WriteLine);
+                    clientService.Read();
 
                 } else if (choice.Equals("U", StringComparison.InvariantCultureIgnoreCase))
                 {
-
+                    /*
                     if (customers.Count == 0)
                     {
                         Console.WriteLine("Client list is empty...");
                         continue;
                     }
-
+                    */
                     Console.WriteLine("Which client should be updated?");
-                    customers.ForEach(Console.WriteLine);
+                    clientService.Read();
                     var updateChoice = int.Parse(Console.ReadLine() ?? "0");
 
-                    var clientToUpdate = customers.FirstOrDefault(s => s.Id == updateChoice);
+                    var clientToUpdate = clientService.Get(updateChoice);
                     if (clientToUpdate != null)
                     {
                         Console.WriteLine("What is the client's updated name?");
@@ -175,22 +166,18 @@ namespace PracticeManagement // Note: actual namespace depends on the project na
 
                 } else if (choice.Equals("D", StringComparison.InvariantCultureIgnoreCase))
                 {
-                    
+                    /*
                     if (customers.Count == 0)
                     {
                         Console.WriteLine("Client list is empty...");
                         continue;
                     }
-
-                        Console.WriteLine("Which client should be deleted?");
-                    customers.ForEach(Console.WriteLine);
+                    */
+                    Console.WriteLine("Which client should be deleted?");
+                    clientService.Read();
                     var deleteChoice = int.Parse(Console.ReadLine() ?? "0");
 
-                    var clientToRemove = customers.FirstOrDefault(s => s.Id == deleteChoice);
-                    if(clientToRemove != null)
-                    {
-                        customers.Remove(clientToRemove);
-                    }
+                    clientService.Delete(deleteChoice);
 
 
                 } else if(choice.Equals("M", StringComparison.InvariantCultureIgnoreCase))
