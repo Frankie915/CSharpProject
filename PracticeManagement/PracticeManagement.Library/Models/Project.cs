@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace PracticeManagement.CLI.Models
 {
@@ -19,5 +20,10 @@ namespace PracticeManagement.CLI.Models
         
         public string? LongName { get; set; }
         public int ClientId { get; set; }
+
+        public override string ToString()
+        {
+            return $"Project Id:{Id}. Client Id:{ClientId}. | Open Date: {OpenDate}";
+        }
     }
 }

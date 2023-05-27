@@ -22,7 +22,7 @@ namespace PracticeManagement.CLI.Models
 
         public override string ToString()
         {
-            return $"{Id}. {Name} | Notes: ";
+            return $"{Id}. {Name} | Notes: {Notes}";
         }
 
     }

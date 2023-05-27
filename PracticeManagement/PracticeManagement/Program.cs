@@ -1,4 +1,5 @@
 ﻿using PracticeManagement.CLI.Models;
+using PracticeManagement.Library.Services;
 using System;
 using System.Runtime.CompilerServices;
 
@@ -75,9 +76,24 @@ namespace PracticeManagement // Note: actual namespace depends on the project na
                 }
                 else if (choice.Equals("U", StringComparison.InvariantCultureIgnoreCase))
                 {
+                   
+                    if (projects.Count == 0)
+                    {
+                        Console.WriteLine("Project list is empty...");
+                        continue;
+                    }
 
+                    Console.WriteLine("Which project should be updated?");
+                    projects.ForEach(Console.WriteLine);
+                    var updateChoice = int.Parse(Console.ReadLine() ?? "0");
 
+                    var projectToUpdate = projects.FirstOrDefault(s => s.Id == updateChoice);
+                    if (projectToUpdate != null)
+                    {
+                        Console.WriteLine("What is the project's updated Client Id?");
+                        projectToUpdate.ClientId = int.Parse(Console.ReadLine() ?? "0");
 
+                    }
                 }
                 else if (choice.Equals("D", StringComparison.InvariantCultureIgnoreCase))
                 {
@@ -140,7 +156,22 @@ namespace PracticeManagement // Note: actual namespace depends on the project na
                 } else if (choice.Equals("U", StringComparison.InvariantCultureIgnoreCase))
                 {
 
+                    if (customers.Count == 0)
+                    {
+                        Console.WriteLine("Client list is empty...");
+                        continue;
+                    }
 
+                    Console.WriteLine("Which client should be updated?");
+                    customers.ForEach(Console.WriteLine);
+                    var updateChoice = int.Parse(Console.ReadLine() ?? "0");
+
+                    var clientToUpdate = customers.FirstOrDefault(s => s.Id == updateChoice);
+                    if (clientToUpdate != null)
+                    {
+                        Console.WriteLine("What is the client's updated name?");
+                        clientToUpdate.Name = Console.ReadLine() ?? "Unknown";
+                    }
 
                 } else if (choice.Equals("D", StringComparison.InvariantCultureIgnoreCase))
                 {
