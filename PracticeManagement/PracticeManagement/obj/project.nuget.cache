@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ToWVN8Z+/qI4Qlvl5PQz0n3LRDv5NXLZ3BKgsMKL+GdgJjUON0kVb5rOvlJG8H/ezK29I77ndULcinwCjJTlAA==",
+  "dgSpecHash": "/5R3KwVwLN7J2gBGafEpW92ro3sIFbYkOUAW0n31xk7pgUP7xIVcns+VAkDBgDNxGx89lPhMra24OdKZygdxhg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\CMari\\Source\\Repos\\CSharpProjectt\\PracticeManagement\\PracticeManagement\\Console.PracticeManagement.csproj",
+  "projectFilePath": "C:\\Users\\CMari\\Source\\Repos\\CSharpProjectt\\PracticeManagement\\PracticeManagement\\PracticeManagement.CLI.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
