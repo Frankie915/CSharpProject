@@ -51,9 +51,11 @@ namespace PracticeManagement // Note: actual namespace depends on the project na
                 {//create client
                     Console.WriteLine("Id: ");
                     var Id = int.Parse(Console.ReadLine() ?? "0");
+                    clientService.Read();
                     Console.WriteLine("Client ID: ");
+
                     var ClientId = int.Parse(Console.ReadLine() ?? "0");
-                    if(projectService.Get(ClientId) == null)
+                    if(clientService.Get(ClientId) == null)
                     {
                         Console.WriteLine("Client does not exist... please update project with an existing client, or make the client first");
                         ClientId = 0;

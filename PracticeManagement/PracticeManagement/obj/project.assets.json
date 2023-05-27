@@ -37,7 +37,7 @@
       "projectName": "PracticeManagement.CLI",
       "projectPath": "C:\\Users\\CMari\\Source\\Repos\\CSharpProjectt\\PracticeManagement\\PracticeManagement\\PracticeManagement.CLI.csproj",
       "packagesPath": "C:\\Users\\CMari\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CMari\\Source\\Repos\\CSharpProjectt\\PracticeManagement\\PracticeManagement\\obj\\",
+      "outputPath": "C:\\Users\\CMari\\source\\repos\\CSharpProjectt\\PracticeManagement\\PracticeManagement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
