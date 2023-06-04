@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement.MAUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-06-01T04:15:43.295</Modified>
+      <Modified>2023-06-02T18:41:12.720</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -919,7 +919,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\PracticeManagement.MAUI.deps.json">
       <PackagePath>PracticeManagement.MAUI.deps.json</PackagePath>
-      <Modified>2023-06-01T04:15:43.109</Modified>
+      <Modified>2023-06-02T18:41:12.369</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.86\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

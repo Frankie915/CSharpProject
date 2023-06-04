@@ -33,6 +33,11 @@ namespace PracticeManagement.Library.Services
             customers = new List<Client>();
         }
 
+        public List<Client> Customers
+        {
+            get { return customers; }   
+        }
+
         public Client? Get(int id)
         {
             return customers.FirstOrDefault(c => c.Id == id);
