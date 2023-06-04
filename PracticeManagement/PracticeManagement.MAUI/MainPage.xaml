@@ -38,28 +38,31 @@
         </VerticalStackLayout>-->
 
         <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
+
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
-                <RowDefinition Height="5*"/>
+                <RowDefinition Height="12*"/>
+                <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
 
-            <Grid Grid.Row="0" Grid.Column="0">
+
+            <Grid Grid.Row="0" >
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
+                    <ColumnDefinition Width="8*"/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Entry Grid.Column="0" Text="{Binding Path=Test1}"></Entry>
                 <Button Grid.Column="1" Text="Search" Clicked="Button_Clicked"></Button>
             </Grid>
-            
-            
-            <Entry Grid.Row="0" Grid.Column="1" Text="{Binding Path=Test2}"></Entry>
-            <Entry Grid.Row="1" Grid.Column="0" Text="{Binding Path=Test3}"></Entry>
-            <Entry Grid.Row="1" Grid.Column="1" Text="{Binding Path=Test4}"></Entry>
+
+            <Grid Grid.Row="1">
+                <Label Text="LISTBOX GOES HERE"></Label>
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <Label Text="BUTTON BAR GOES HERE"></Label>
+            </Grid>
+          
         </Grid>
     </ScrollView>
 

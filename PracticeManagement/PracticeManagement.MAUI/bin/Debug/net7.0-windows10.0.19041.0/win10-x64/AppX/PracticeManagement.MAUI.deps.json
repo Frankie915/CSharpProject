@@ -18,6 +18,7 @@
           "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": "7.0.86",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
           "Microsoft.WindowsAppSDK": "1.2.221209.1",
+          "PracticeManagement.Library": "1.0.0",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "7.0.5",
           "runtimepack.Microsoft.Maui.Core.Runtime.win": "7.0.86",
           "runtimepack.Microsoft.Maui.Controls.Runtime.win": "7.0.86",
@@ -994,6 +995,11 @@
             "fileVersion": "0.0.0.0"
           }
         }
+      },
+      "PracticeManagement.Library/1.0.0": {
+        "runtime": {
+          "PracticeManagement.Library.dll": {}
+        }
       }
     }
   },
@@ -1125,6 +1131,11 @@
       "sha512": "sha512-1Y8KDCmUqytdduubaQhRz6aqaP7YhVSPE/fHeqLMsK3DrV+eBThrqkM6R/8N2lu0mwkNfKSTSAhixrTR72nyWA==",
       "path": "microsoft.windowsappsdk/1.2.221209.1",
       "hashPath": "microsoft.windowsappsdk.1.2.221209.1.nupkg.sha512"
+    },
+    "PracticeManagement.Library/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   },
   "runtimes": {
