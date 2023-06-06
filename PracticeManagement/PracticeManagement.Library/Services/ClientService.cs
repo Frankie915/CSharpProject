@@ -30,7 +30,12 @@ namespace PracticeManagement.Library.Services
         private List<Client> customers;
         private ClientService()
         {
-            customers = new List<Client>();
+            customers = new List<Client>
+            {
+                new Client{Id = 1, Name = "John Smith", Notes = "Cool" },
+                new Client{Id = 2, Name = "Tony Stark", Notes = "Smart" },
+                new Client{Id = 3, Name = "Jonas Wilson", Notes = "Too smart" }
+            };
         }
 
         public List<Client> Customers
@@ -58,6 +63,11 @@ namespace PracticeManagement.Library.Services
             {
                 customers.Remove(clientToRemove);
             }
+        }
+
+        public void Delete(Client c)
+        {
+            Delete(c.Id);
         }
 
         public void Read()

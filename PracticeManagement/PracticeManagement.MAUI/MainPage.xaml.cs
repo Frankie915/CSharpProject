@@ -12,9 +12,24 @@ namespace PracticeManagement.MAUI
 
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void Add(object sender, EventArgs e)
         {
 
+        }
+
+        private void Edit(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeleteClick(object sender, EventArgs e)
+        {
+            (BindingContext as MainViewModel).Delete();
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+           
         }
     }
 }   

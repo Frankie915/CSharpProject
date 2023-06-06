@@ -12,6 +12,15 @@ namespace PracticeManagement.MAUI.ViewModels
 {
     public class MainViewModel: INotifyPropertyChanged
     {
+
+        public List<Project> Projects
+        {
+            get
+            {
+                return ProjectService.Current.Projects;
+            }
+        }
+
         public List<Client> Clients
         {
             get
@@ -19,6 +28,16 @@ namespace PracticeManagement.MAUI.ViewModels
                 return ClientService.Current.Customers;
             }
         }
+
+        public void Delete()
+        {
+            if(SelectedClient == null) return;
+            ClientService.Current.Delete(SelectedClient);
+            NotifyPropertyChanged("Clients");
+        }
+
+        public Client SelectedClient {  get; set; }
+
         //private string test1;
         //public string Test1
         //{

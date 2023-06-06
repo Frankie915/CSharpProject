@@ -56,11 +56,26 @@
             </Grid>
 
             <Grid Grid.Row="1">
-                <Label Text="LISTBOX GOES HERE"></Label>
+                <ListView
+                    ItemsSource="{Binding Path=Clients}"
+                    SelectedItem="{Binding Path=SelectedClient, Mode=TwoWay}"
+                    >
+                    
+                </ListView>
             </Grid>
 
             <Grid Grid.Row="2">
-                <Label Text="BUTTON BAR GOES HERE"></Label>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Text="Add" Grid.Column="0"></Button>
+                    <Button Text="Edit" Grid.Column="1"></Button>
+                    <Button Text="Delete" Grid.Column="2" Clicked="DeleteClick"></Button>
+                </Grid>
             </Grid>
           
         </Grid>

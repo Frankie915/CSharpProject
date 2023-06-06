@@ -32,6 +32,11 @@ namespace PracticeManagement.Library.Services
             projects = new List<Project>();
         }
 
+        public List<Project> Projects
+        {
+            get { return projects; }
+        }
+
         public Project? Get(int id)
         {
             return projects.FirstOrDefault(c => c.Id == id);
