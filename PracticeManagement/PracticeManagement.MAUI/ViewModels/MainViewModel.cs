@@ -26,8 +26,19 @@ namespace PracticeManagement.MAUI.ViewModels
         {
             get
             {
-                return new ObservableCollection<Client>(ClientService.Current.Customers);
+                if(string.IsNullOrEmpty(Query))
+                {
+                    return new ObservableCollection<Client>(ClientService.Current.Customers);
+                }
+                return new ObservableCollection<Client>(ClientService.Current.Search(Query));
             }
+        }
+
+        public string Query { get; set; }
+
+        public void Search()
+        {
+            NotifyPropertyChanged("Clients");
         }
 
         public void Delete()

@@ -27,9 +27,10 @@ namespace PracticeManagement.MAUI
             (BindingContext as MainViewModel).Delete();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void SearchClicked(object sender, EventArgs e)
         {
-           
+            (BindingContext as MainViewModel).Search();
         }
+
     }
 }   

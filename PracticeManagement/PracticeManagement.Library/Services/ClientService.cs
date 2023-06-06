@@ -43,6 +43,11 @@ namespace PracticeManagement.Library.Services
             get { return customers; }   
         }
 
+        public List<Client> Search(string query)
+        {
+            return Customers.Where(c => c.Name.ToUpper().Contains(query.ToUpper())).ToList();
+        }
+
         public Client? Get(int id)
         {
             return customers.FirstOrDefault(c => c.Id == id);
