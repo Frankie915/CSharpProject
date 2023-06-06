@@ -32,9 +32,9 @@ namespace PracticeManagement.Library.Services
         {
             customers = new List<Client>
             {
-                new Client{Id = 1, Name = "John Smith", Notes = "Cool" },
-                new Client{Id = 2, Name = "Tony Stark", Notes = "Smart" },
-                new Client{Id = 3, Name = "Jonas Wilson", Notes = "Too smart" }
+                new Client{Id = 1, Name = "Christian", Notes = "Unstable" },
+                new Client{Id = 2, Name = "Poox", Notes = "Smoll" },
+                new Client{Id = 3, Name = "Ness", Notes = "Autistic" }
             };
         }
 
