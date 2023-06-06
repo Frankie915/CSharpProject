@@ -2,6 +2,7 @@
 using PracticeManagement.Library.Services;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -13,19 +14,19 @@ namespace PracticeManagement.MAUI.ViewModels
     public class MainViewModel: INotifyPropertyChanged
     {
 
-        public List<Project> Projects
+        public ObservableCollection<Project> Projects
         {
             get
             {
-                return ProjectService.Current.Projects;
+                return new ObservableCollection<Project>(ProjectService.Current.Projects);
             }
         }
 
-        public List<Client> Clients
+        public ObservableCollection<Client> Clients
         {
             get
             {
-                return ClientService.Current.Customers;
+                return new ObservableCollection<Client>(ClientService.Current.Customers);
             }
         }
 
