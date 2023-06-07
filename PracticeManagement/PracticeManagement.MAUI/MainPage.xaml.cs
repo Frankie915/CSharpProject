@@ -32,5 +32,14 @@ namespace PracticeManagement.MAUI
             (BindingContext as MainViewModel).Search();
         }
 
+        private void ClientClicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EmployeeClicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }   

@@ -4,40 +4,8 @@
              x:Class="PracticeManagement.MAUI.MainPage">
 
     <ScrollView>
-        <!--<VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-
-        </VerticalStackLayout>-->
-
-        <Grid>
+        <!--><Grid>
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
@@ -57,7 +25,7 @@
 
             <Grid Grid.Row="1">
                 <ListView
-                    ItemsSource="{Binding Path=Clients}"
+                    ItemsSource="{Binding Path=Clients, Mode=TwoWay}"
                     SelectedItem="{Binding Path=SelectedClient, Mode=TwoWay}"
                     >
                     
@@ -78,7 +46,37 @@
                 </Grid>
             </Grid>
           
+        </Grid>-->
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1">
+
+                <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+                    <Button
+                Text="Client View"
+                Clicked="ClientClicked">
+                    </Button>
+
+                    <Button
+                        Text="Employee View"
+                        Clicked="EmployeeClicked">
+                    </Button>
+
+                </VerticalStackLayout>
+                
+            </Grid>
         </Grid>
+        
     </ScrollView>
 
 </ContentPage>

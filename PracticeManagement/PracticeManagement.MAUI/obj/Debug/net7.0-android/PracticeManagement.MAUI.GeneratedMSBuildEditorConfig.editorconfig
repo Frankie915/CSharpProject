@@ -43,3 +43,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/CMari/Source/Repos/CSharpProjectt/PracticeManagement/PracticeManagement.MAUI/Views/ClientView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Views.ClientView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ClientView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ClientView.xaml

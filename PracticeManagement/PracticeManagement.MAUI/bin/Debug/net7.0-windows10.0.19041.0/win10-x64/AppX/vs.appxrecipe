@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement.MAUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-06-06T18:18:12.419</Modified>
+      <Modified>2023-06-07T16:50:40.353</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement.MAUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-06-06T18:18:11.889</Modified>
+      <Modified>2023-06-07T16:50:40.002</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement.MAUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\PracticeManagement.MAUI.runtimeconfig.json">
       <PackagePath>PracticeManagement.MAUI.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement.MAUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\PracticeManagement.MAUI.dll">
       <PackagePath>PracticeManagement.MAUI.dll</PackagePath>
-      <Modified>2023-06-06T18:18:10.935</Modified>
+      <Modified>2023-06-07T16:50:38.740</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>PracticeManagement.MAUI.exe</PackagePath>
-      <Modified>2023-06-06T18:18:10.957</Modified>
+      <Modified>2023-06-07T16:50:38.762</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -919,11 +919,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement.Library\bin\Debug\net7.0\PracticeManagement.Library.dll">
       <PackagePath>PracticeManagement.Library.dll</PackagePath>
-      <Modified>2023-06-06T18:18:05.847</Modified>
+      <Modified>2023-06-07T16:50:34.548</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\PracticeManagement.MAUI.deps.json">
       <PackagePath>PracticeManagement.MAUI.deps.json</PackagePath>
-      <Modified>2023-06-06T18:18:12.275</Modified>
+      <Modified>2023-06-07T16:50:40.210</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.86\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
