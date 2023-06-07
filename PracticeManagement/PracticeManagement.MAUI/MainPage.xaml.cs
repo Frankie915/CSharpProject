@@ -34,7 +34,7 @@ namespace PracticeManagement.MAUI
 
         private void ClientClicked(object sender, EventArgs e)
         {
-
+            Shell.Current.GoToAsync("//Client");
         }
 
         private void EmployeeClicked(object sender, EventArgs e)
