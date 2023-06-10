@@ -8,6 +8,10 @@ namespace PracticeManagement.Library.Models
 {
     public class Employee
     {
+        public String Name { get; set; }
 
+        public Decimal Rate { get; set; }
+
+        public int Id { get; set; }
     }
 }
