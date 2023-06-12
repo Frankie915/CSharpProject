@@ -12,6 +12,11 @@
         <Button
             WidthRequest="550"
             HeightRequest="60"
+            Text="Add " />
+
+        <Button
+            WidthRequest="550"
+            HeightRequest="60"
            Text="Cancel"
             Clicked="CancelClicked"/>
     </VerticalStackLayout>
