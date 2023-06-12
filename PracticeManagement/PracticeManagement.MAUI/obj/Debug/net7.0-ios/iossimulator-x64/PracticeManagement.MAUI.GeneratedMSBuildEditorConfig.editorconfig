@@ -8,46 +8,46 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PracticeManagement.MAUI
-build_property.ProjectDir = C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement.MAUI\
+build_property.ProjectDir = /Users/frankmarino/Desktop/CSharpProject/PracticeManagement/PracticeManagement.MAUI/
 
-[C:/Users/CMari/Source/Repos/CSharpProjectt/PracticeManagement/PracticeManagement.MAUI/App.xaml]
+[/Users/frankmarino/Desktop/CSharpProject/PracticeManagement/PracticeManagement.MAUI/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/CMari/Source/Repos/CSharpProjectt/PracticeManagement/PracticeManagement.MAUI/AppShell.xaml]
+[/Users/frankmarino/Desktop/CSharpProject/PracticeManagement/PracticeManagement.MAUI/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/CMari/Source/Repos/CSharpProjectt/PracticeManagement/PracticeManagement.MAUI/MainPage.xaml]
+[/Users/frankmarino/Desktop/CSharpProject/PracticeManagement/PracticeManagement.MAUI/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/CMari/Source/Repos/CSharpProjectt/PracticeManagement/PracticeManagement.MAUI/Resources/Styles/Colors.xaml]
+[/Users/frankmarino/Desktop/CSharpProject/PracticeManagement/PracticeManagement.MAUI/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Resources.Styles.Colors.xaml
-build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
-build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
 
-[C:/Users/CMari/Source/Repos/CSharpProjectt/PracticeManagement/PracticeManagement.MAUI/Resources/Styles/Styles.xaml]
+[/Users/frankmarino/Desktop/CSharpProject/PracticeManagement/PracticeManagement.MAUI/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Resources.Styles.Styles.xaml
-build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
-build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
 
-[C:/Users/CMari/Source/Repos/CSharpProjectt/PracticeManagement/PracticeManagement.MAUI/Views/ClientView.xaml]
+[/Users/frankmarino/Desktop/CSharpProject/PracticeManagement/PracticeManagement.MAUI/Views/ClientView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Views.ClientView.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\ClientView.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\ClientView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/ClientView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/ClientView.xaml
 
-[C:/Users/CMari/Source/Repos/CSharpProjectt/PracticeManagement/PracticeManagement.MAUI/Views/EmployeeView.xaml]
+[/Users/frankmarino/Desktop/CSharpProject/PracticeManagement/PracticeManagement.MAUI/Views/EmployeeView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Views.EmployeeView.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\EmployeeView.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\EmployeeView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/EmployeeView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/EmployeeView.xaml

@@ -63,11 +63,13 @@
             VerticalOptions="Center">
 
                     <Button
+                        HeightRequest="60"
                 Text="Client View"
                 Clicked="ClientClicked">
                     </Button>
 
                     <Button
+                        HeightRequest="60"
                         Text="Employee View"
                         Clicked="EmployeeClicked">
                     </Button>

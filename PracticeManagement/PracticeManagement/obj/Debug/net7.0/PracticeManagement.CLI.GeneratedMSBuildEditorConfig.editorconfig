@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PracticeManagement.CLI
-build_property.ProjectDir = C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement\
+build_property.ProjectDir = /Users/frankmarino/Desktop/CSharpProject/PracticeManagement/PracticeManagement/
