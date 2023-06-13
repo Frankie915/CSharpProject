@@ -53,6 +53,7 @@ public partial class EmployeeView : ContentPage
 
     void AddClientClicked(System.Object sender, System.EventArgs e)
     {
+        (BindingContext as EmployeeViewViewModel).AddClientClick(Shell.Current);
     }
 
     void EditClientClicked(System.Object sender, System.EventArgs e)

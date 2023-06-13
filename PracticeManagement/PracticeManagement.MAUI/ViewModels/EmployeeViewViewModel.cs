@@ -52,6 +52,8 @@ namespace PracticeManagement.MAUI.ViewModels
             }
         }
 
+        public Client SelectedClient { get; set; }
+
         public Project SelectedProject { get; set; }
        
         public bool IsProjectsVisible { get; set; }
@@ -111,6 +113,12 @@ namespace PracticeManagement.MAUI.ViewModels
 		{
 			NotifyPropertyChanged(nameof(Projects));
 		}
-	}
+
+        public void AddCLientClick(Shell s)
+        {
+            var idParam = SelectedClient?.Id ?? 0;
+            s.GoToAsync($"//ClientView?personId={idParam}");
+        }
+    }
 }
 
