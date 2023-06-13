@@ -52,7 +52,8 @@ namespace PracticeManagement.MAUI.ViewModels
             }
         }
 
-        public Project SelectProject { get; set; }
+        public Project SelectedProject { get; set; }
+       
         public bool IsProjectsVisible { get; set; }
 
 		public bool IsClientsVisible { get; set; }

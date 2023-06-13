@@ -50,4 +50,16 @@ public partial class EmployeeView : ContentPage
     {
 
     }
+
+    void AddClientClicked(System.Object sender, System.EventArgs e)
+    {
+    }
+
+    void EditClientClicked(System.Object sender, System.EventArgs e)
+    {
+    }
+
+    void RemoveClientClicked(System.Object sender, System.EventArgs e)
+    {
+    }
 }

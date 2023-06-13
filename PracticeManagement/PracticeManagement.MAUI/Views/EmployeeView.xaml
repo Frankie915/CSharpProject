@@ -20,7 +20,36 @@
     </ContentPage.ToolbarItems>
     <VerticalStackLayout Spacing="20">
         <SearchBar Text="{Binding Query, Mode=TwoWay}"></SearchBar>
-        
+
+        <!--CLIENTS-->
+        <VerticalStackLayout IsVisible="{Binding IsClientsVisible}"
+                             Spacing="30" >
+            <Label
+                Text="Clients"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+
+            <ListView
+                ItemsSource="{Binding Clients}"
+                SelectedItem="{Binding SelectedClient}" />
+            <Button
+                WidthRequest="550"
+                HeightRequest="60"
+                Text="Add Client" 
+                Clicked="AddClientClicked"/>
+
+            <Button
+            WidthRequest="550"
+            HeightRequest="60"
+            Text="Edit Client" 
+                Clicked="EditClientClicked"/>
+
+            <Button
+            WidthRequest="550"
+            HeightRequest="60"
+            Text="Remove Client" 
+                Clicked="RemoveClientClicked"/>
+        </VerticalStackLayout>
         <!--PROJECTS-->
         <VerticalStackLayout IsVisible="{Binding IsProjectsVisible}"
                              Spacing="30">
@@ -31,7 +60,7 @@
 
             <ListView
                 ItemsSource="{Binding Projects}"
-                SelectedItem="{Binding SelecedProject}" />
+                SelectedItem="{Binding SelectedProject}" />
 
             <Button
             WidthRequest="550"
@@ -57,6 +86,7 @@
            Text="Cancel"
             Clicked="CancelClicked"/>
         </VerticalStackLayout>
+
         
 
         
