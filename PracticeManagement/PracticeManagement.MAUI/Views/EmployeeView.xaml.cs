@@ -17,7 +17,8 @@ public partial class EmployeeView : ContentPage
 
     private void ContentPage_NavigatedTo(object sender, NavigatedToEventArgs e)
     {
-
+        (BindingContext as EmployeeViewViewModel).ResetView();
+        (BindingContext as EmployeeViewViewModel).RefreshView();
     }
 
     private void Toolbar_ClientsClicked(object sender, EventArgs e)
@@ -31,6 +32,21 @@ public partial class EmployeeView : ContentPage
     }
 
     private void Toolbar_TeamClicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void AddProjectClicked(object sender, EventArgs e)
+    {
+        
+    }
+
+    private void EditProjectClicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void RemoveProjectClicked(object sender, EventArgs e)
     {
 
     }

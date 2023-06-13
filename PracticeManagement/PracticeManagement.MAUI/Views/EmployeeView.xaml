@@ -19,20 +19,48 @@
             Clicked="Toolbar_TeamClicked" />
     </ContentPage.ToolbarItems>
     <VerticalStackLayout Spacing="20">
+        <SearchBar Text="{Binding Query, Mode=TwoWay}"></SearchBar>
+        
+        <!--PROJECTS-->
+        <VerticalStackLayout IsVisible="{Binding IsProjectsVisible}" >
+            <Label
+                Text="Projects"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+
+            <ListView
+                ItemsSource="{Binding Projects}"
+                SelectedItem="{Binding SelecedProject}" />
+
+            <Button
+            WidthRequest="550"
+            HeightRequest="60"
+            Text="Add Project" 
+                Clicked="AddProjectClicked"/>
+
+            <Button
+            WidthRequest="550"
+            HeightRequest="60"
+            Text="Edit Project" 
+                Clicked="EditProjectClicked"/>
+
+            <Button
+            WidthRequest="550"
+            HeightRequest="60"
+            Text="Add Project" 
+                Clicked="RemoveProjectClicked"/>
+
+            <Button
+            WidthRequest="550"
+            HeightRequest="60"
+           Text="Cancel"
+            Clicked="CancelClicked"/>
+        </VerticalStackLayout>
         <Label 
             Text="Employee View"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <Button
-            WidthRequest="550"
-            HeightRequest="60"
-            Text="Add " />
-
-        <Button
-            WidthRequest="550"
-            HeightRequest="60"
-           Text="Cancel"
-            Clicked="CancelClicked"/>
+        
     </VerticalStackLayout>
 </ContentPage>
