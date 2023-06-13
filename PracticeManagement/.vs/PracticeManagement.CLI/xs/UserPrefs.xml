@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{3D522C6C-EADD-48AC-8C37-44898B58F820}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PracticeManagement.MAUI/Views/ClientView.xaml">
+    <Files>
+      <File FileName="PracticeManagement.MAUI/Views/EmployeeView.xaml" Line="14" Column="30" />
+      <File FileName="PracticeManagement.MAUI/MauiProgram.cs" Line="1" Column="1" />
+      <File FileName="PracticeManagement.MAUI/ViewModels/MainViewModel.cs" Line="73" Column="16" />
+      <File FileName="PracticeManagement.MAUI/MainPage.xaml.cs" Line="42" Column="51" />
+      <File FileName="PracticeManagement.MAUI/AppShell.xaml" Line="24" Column="11" />
+      <File FileName="PracticeManagement.MAUI/Views/EmployeeView.xaml.cs" Line="13" Column="19" />
+      <File FileName="PracticeManagement.MAUI/Views/ClientView.xaml.cs" Line="10" Column="46" />
+      <File FileName="PracticeManagement.MAUI/ViewModels/EmployeeViewViewModel.cs" Line="1" Column="1" />
+      <File FileName="PracticeManagement.MAUI/Views/ClientView.xaml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PracticeManagement.CLI" expanded="True">
+            <Node name="PracticeManagement.Library" expanded="True">
+              <Node name="Models" expanded="True" />
+            </Node>
+            <Node name="PracticeManagement.MAUI" expanded="True">
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="ClientView.xaml" expanded="True" selected="True" />
+                <Node name="EmployeeView.xaml" expanded="True" />
+              </Node>
+              <Node name="AppShell.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.ItemProperties.PracticeManagement.MAUI PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.PracticeManagement.CLI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

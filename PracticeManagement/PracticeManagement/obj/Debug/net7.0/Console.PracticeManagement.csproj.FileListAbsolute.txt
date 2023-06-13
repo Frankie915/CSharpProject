@@ -1,0 +1,15 @@
+C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement\obj\Debug\net7.0\Console.PracticeManagement.csproj.AssemblyReference.cache
+C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement\obj\Debug\net7.0\Console.PracticeManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement\obj\Debug\net7.0\Console.PracticeManagement.AssemblyInfoInputs.cache
+C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement\obj\Debug\net7.0\Console.PracticeManagement.AssemblyInfo.cs
+C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement\obj\Debug\net7.0\Console.PracticeManagement.csproj.CoreCompileInputs.cache
+C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement\bin\Debug\net7.0\Console.PracticeManagement.exe
+C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement\bin\Debug\net7.0\Console.PracticeManagement.deps.json
+C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement\bin\Debug\net7.0\Console.PracticeManagement.runtimeconfig.json
+C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement\bin\Debug\net7.0\Console.PracticeManagement.dll
+C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement\bin\Debug\net7.0\Console.PracticeManagement.pdb
+C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement\obj\Debug\net7.0\Console.PracticeManagement.dll
+C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement\obj\Debug\net7.0\refint\Console.PracticeManagement.dll
+C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement\obj\Debug\net7.0\Console.PracticeManagement.pdb
+C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement\obj\Debug\net7.0\Console.PracticeManagement.genruntimeconfig.cache
+C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement\obj\Debug\net7.0\ref\Console.PracticeManagement.dll
