@@ -1,1 +1,0 @@
-C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement.MAUI\PracticeManagement.MAUI.csproj;x64
