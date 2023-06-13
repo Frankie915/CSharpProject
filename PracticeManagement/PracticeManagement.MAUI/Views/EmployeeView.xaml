@@ -4,7 +4,20 @@
              x:Class="PracticeManagement.MAUI.Views.EmployeeView"
              Title="EmployeeView"
              NavigatedTo="ContentPage_NavigatedTo">
-    
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Text="Clients"
+            Clicked="Toolbar_ClientsClicked" />
+
+        <ToolbarItem
+            Text="Projects"
+            Clicked="Toolbar_ProjectsClicked" />
+
+        <ToolbarItem
+            Text="Team"
+            Clicked="Toolbar_TeamClicked" />
+    </ContentPage.ToolbarItems>
     <VerticalStackLayout Spacing="20">
         <Label 
             Text="Employee View"

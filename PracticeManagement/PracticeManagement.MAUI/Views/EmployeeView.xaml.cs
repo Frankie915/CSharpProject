@@ -19,4 +19,19 @@ public partial class EmployeeView : ContentPage
     {
 
     }
+
+    private void Toolbar_ClientsClicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void Toolbar_ProjectsClicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void Toolbar_TeamClicked(object sender, EventArgs e)
+    {
+
+    }
 }

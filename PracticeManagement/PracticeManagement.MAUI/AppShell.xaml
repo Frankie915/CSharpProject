@@ -27,5 +27,10 @@
         ContentTemplate="{DataTemplate local2:ProjectDetailView}"
         Route="ProjectDetail" />
 
+    <ShellContent
+        Title="Time Details"
+        ContentTemplate="{DataTemplate local2:TimeDetailView}"
+        Route="TimeDetail" />
+
 
 </Shell>
