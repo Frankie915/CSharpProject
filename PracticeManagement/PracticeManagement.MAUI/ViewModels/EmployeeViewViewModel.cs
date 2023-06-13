@@ -83,7 +83,7 @@ namespace PracticeManagement.MAUI.ViewModels
             IsClientsVisible = false;
             IsProjectsVisible = true;
             IsTeamVisible = false;
-
+            
             NotifyPropertyChanged("IsClientsVisible");
             NotifyPropertyChanged("IsProjectsVisible");
             NotifyPropertyChanged("IsTeamVisible");
