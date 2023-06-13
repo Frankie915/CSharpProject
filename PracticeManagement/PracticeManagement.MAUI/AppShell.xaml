@@ -20,7 +20,12 @@
     <ShellContent
         Title="Employee"
         ContentTemplate="{DataTemplate local2:EmployeeView}"
-        Route="Employee"
-        />
+        Route="Employee" />
+
+    <ShellContent
+        Title="Projects"
+        ContentTemplate="{DataTemplate local2:ProjectDetailView}"
+        Route="ProjectDetail" />
+
 
 </Shell>
