@@ -62,14 +62,14 @@ build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Vi
 build_metadata.AdditionalFiles.TargetPath = Views\PersonDetailView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\PersonDetailView.xaml
 
-[C:/Users/CMari/OneDrive/Desktop/GitHub/PracticePanther/PracticeManagement/PracticeManagement.MAUI/Views/ProjectDetailView.xaml]
+[C:/Users/CMari/OneDrive/Desktop/GitHub/PracticePanther/PracticeManagement/PracticeManagement.MAUI/Views/ProjectView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Views.ProjectDetailView.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\ProjectDetailView.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\ProjectDetailView.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Views.ProjectView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProjectView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProjectView.xaml
 
-[C:/Users/CMari/OneDrive/Desktop/GitHub/PracticePanther/PracticeManagement/PracticeManagement.MAUI/Views/TimeDetailView.xaml]
+[C:/Users/CMari/OneDrive/Desktop/GitHub/PracticePanther/PracticeManagement/PracticeManagement.MAUI/Views/TimeView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Views.TimeDetailView.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\TimeDetailView.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\TimeDetailView.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Views.TimeView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\TimeView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\TimeView.xaml

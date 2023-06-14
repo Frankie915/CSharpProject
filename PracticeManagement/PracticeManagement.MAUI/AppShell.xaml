@@ -24,13 +24,13 @@
 
     <ShellContent
         Title="Projects"
-        ContentTemplate="{DataTemplate local2:ProjectDetailView}"
-        Route="ProjectDetail" />
+        ContentTemplate="{DataTemplate local2:ProjectView}"
+        Route="Project" />
 
     <ShellContent
         Title="Time Details"
-        ContentTemplate="{DataTemplate local2:TimeDetailView}"
-        Route="TimeDetail" />
+        ContentTemplate="{DataTemplate local2:TimeView}"
+        Route="Time" />
 
     <ShellContent
         Title="Person Details"

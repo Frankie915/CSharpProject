@@ -9,5 +9,10 @@ public partial class EmployeeView : ContentPage
 		InitializeComponent();
 		BindingContext = new EmployeeViewModel();
 	}
-   
+
+    private void CancelClicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("//MainPage");
+    }
+
 }

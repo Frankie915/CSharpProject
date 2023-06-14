@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PracticeManagement.MAUI.ViewModels
 {
-    public class ProjectDetailViewModel
+    public class ProjectViewModel
     {
     }
 }

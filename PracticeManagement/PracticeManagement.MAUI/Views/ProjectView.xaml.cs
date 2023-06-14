@@ -1,9 +1,10 @@
 namespace PracticeManagement.MAUI.Views;
 
-public partial class TimeDetailView : ContentPage
+public partial class ProjectView : ContentPage
 {
-	public TimeDetailView()
+	public ProjectView()
 	{
 		InitializeComponent();
 	}
+
 }

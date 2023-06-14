@@ -64,9 +64,19 @@
 
                     <Button
                         HeightRequest="60"
-                        Text="Clients and Projects"
+                        Text="Manage Clients and Projects"
                         Clicked="ClientProjectClicked">
                     </Button>
+
+                    <Button
+                        HeightRequest="60"
+                        Text="Manage Employees"
+                        Clicked="EmployeesClicked" />
+
+                    <Button
+                        HeightRequest="60"
+                        Text="Manage Time"
+                        Clicked="TimeClicked" />
 
                 </VerticalStackLayout>
                 
