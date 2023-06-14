@@ -20,10 +20,45 @@
     </ContentPage.ToolbarItems>
     <VerticalStackLayout Spacing="20">
         <SearchBar Text="{Binding Query, Mode=TwoWay}"></SearchBar>
-        
-        <!--PROJECTS-->
-        <VerticalStackLayout IsVisible="{Binding IsProjectsVisible}" >
+
+
+        <!--CLIENTS-->
+        <VerticalStackLayout IsVisible="{Binding IsClientsVisible}"
+                             Spacing="30" >
             <Label
+                Text="Clients"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+
+            <ListView
+                ItemsSource="{Binding Clients}"
+                SelectedItem="{Binding SelectedClient}" />
+            <Button
+                WidthRequest="550"
+                HeightRequest="60"
+                Text="Add Client" 
+                Clicked="AddClientClicked"/>
+
+            <Button
+            WidthRequest="550"
+            HeightRequest="60"
+            Text="Edit Client" 
+                Clicked="EditClientClicked"/>
+
+            <Button
+            WidthRequest="550"
+            HeightRequest="60"
+            Text="Remove Client" 
+                Clicked="RemoveClientClicked"/>
+        </VerticalStackLayout>
+        <!--PROJECTS-->
+        <VerticalStackLayout IsVisible="{Binding IsProjectsVisible}"
+                             Spacing="30">
+            <Label
+                Text="Projects"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+
                 Text="Projects"
                 VerticalOptions="Center"
                 HorizontalOptions="Center" />
@@ -41,14 +76,15 @@
             <Button
             WidthRequest="550"
             HeightRequest="60"
+
             Text="Edit Project" 
-                Clicked="EditProjectClicked"/>
+            Clicked="EditProjectClicked"/>
 
             <Button
             WidthRequest="550"
             HeightRequest="60"
-            Text="Add Project" 
-                Clicked="RemoveProjectClicked"/>
+            Text="Remove Project" 
+            Clicked="RemoveProjectClicked"/>
 
             <Button
             WidthRequest="550"
@@ -56,10 +92,7 @@
            Text="Cancel"
             Clicked="CancelClicked"/>
         </VerticalStackLayout>
-        <Label 
-            Text="Employee View"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+
 
         
     </VerticalStackLayout>

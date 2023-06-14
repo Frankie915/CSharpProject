@@ -12,8 +12,9 @@ namespace PracticeManagement.MAUI.ViewModels
 	{
 		public EmployeeViewViewModel()
 		{
-			IsProjectsVisible = true;
-			IsClientsVisible = false;
+
+			IsProjectsVisible = false;
+			IsClientsVisible = true;
 			IsTeamVisible = false;
 			
 		}
@@ -52,7 +53,12 @@ namespace PracticeManagement.MAUI.ViewModels
             }
         }
 
-        public Project SelectProject { get; set; }
+
+        public Client SelectedClient { get; set; }
+
+        public Project SelectedProject { get; set; }
+       
+
         public bool IsProjectsVisible { get; set; }
 
 		public bool IsClientsVisible { get; set; }
@@ -66,6 +72,42 @@ namespace PracticeManagement.MAUI.ViewModels
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+
+        public void ShowClients()
+        {
+            IsClientsVisible = true;
+            IsProjectsVisible = false;
+            IsTeamVisible = false;
+
+            NotifyPropertyChanged("IsClientsVisible");
+            NotifyPropertyChanged("IsProjectsVisible");
+            NotifyPropertyChanged("IsTeamVisible");
+
+        }
+
+        public void ShowProjects()
+        {
+            IsClientsVisible = false;
+            IsProjectsVisible = true;
+            IsTeamVisible = false;
+            
+            NotifyPropertyChanged("IsClientsVisible");
+            NotifyPropertyChanged("IsProjectsVisible");
+            NotifyPropertyChanged("IsTeamVisible");
+        }
+
+        public void ShowTeam()
+        {
+            IsClientsVisible = false;
+            IsProjectsVisible = false;
+            IsTeamVisible = true;
+
+            NotifyPropertyChanged("IsClientsVisible");
+            NotifyPropertyChanged("IsProjectsVisible");
+            NotifyPropertyChanged("IsTeamVisible");
+        }
+
+
         public void ResetView()
         {
             Query = string.Empty;
@@ -76,6 +118,12 @@ namespace PracticeManagement.MAUI.ViewModels
 		{
 			NotifyPropertyChanged(nameof(Projects));
 		}
-	}
+
+        public void AddCLientClick(Shell s)
+        {
+            var idParam = SelectedClient?.Id ?? 0;
+            s.GoToAsync($"//ClientView?personId={idParam}");
+        }
+    }
 }
 
