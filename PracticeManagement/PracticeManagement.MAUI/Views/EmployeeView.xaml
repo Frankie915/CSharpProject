@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticeManagement.MAUI.Views.EmployeeView"
+             Title="EmployeeView"
+             NavigatedTo="ContentPage_NavigatedTo">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Text="Clients"
+            Clicked="Toolbar_ClientsClicked" />
+
+        <ToolbarItem
+            Text="Projects"
+            Clicked="Toolbar_ProjectsClicked" />
+
+        <ToolbarItem
+            Text="Team"
+            Clicked="Toolbar_TeamClicked" />
+    </ContentPage.ToolbarItems>
+    <VerticalStackLayout Spacing="20">
+        <SearchBar Text="{Binding Query, Mode=TwoWay}"></SearchBar>
+
+
+        <!--CLIENTS-->
+        <VerticalStackLayout IsVisible="{Binding IsClientsVisible}"
+                             Spacing="30" >
+            <Label
+                Text="Clients"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+
+            <ListView
+                ItemsSource="{Binding Clients}"
+                SelectedItem="{Binding SelectedClient}" />
+            <Button
+                WidthRequest="550"
+                HeightRequest="60"
+                Text="Add Client" 
+                Clicked="AddClientClicked"/>
+
+            <Button
+            WidthRequest="550"
+            HeightRequest="60"
+            Text="Edit Client" 
+                Clicked="EditClientClicked"/>
+
+            <Button
+            WidthRequest="550"
+            HeightRequest="60"
+            Text="Remove Client" 
+                Clicked="RemoveClientClicked"/>
+        </VerticalStackLayout>
+        <!--PROJECTS-->
+        <VerticalStackLayout IsVisible="{Binding IsProjectsVisible}"
+                             Spacing="30">
+            <Label
+                Text="Projects"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+
+            <ListView
+                ItemsSource="{Binding Projects}"
+                SelectedItem="{Binding SelectedProject}" />
+
+            <Button
+            WidthRequest="550"
+            HeightRequest="60"
+            Text="Add Project" 
+                Clicked="AddProjectClicked"/>
+
+            <Button
+            WidthRequest="550"
+            HeightRequest="60"
+
+            Text="Edit Project" 
+            Clicked="EditProjectClicked"/>
+
+            <Button
+            WidthRequest="550"
+            HeightRequest="60"
+            Text="Remove Project" 
+            Clicked="RemoveProjectClicked"/>
+
+            <Button
+            WidthRequest="550"
+            HeightRequest="60"
+           Text="Cancel"
+            Clicked="CancelClicked"/>
+        </VerticalStackLayout>
+
+
+        
+    </VerticalStackLayout>
+</ContentPage>
