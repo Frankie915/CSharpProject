@@ -63,4 +63,19 @@ public partial class EmployeeView : ContentPage
     void RemoveClientClicked(System.Object sender, System.EventArgs e)
     {
     }
+
+    private void AddProjectClicked(object sender, EventArgs e)
+    {
+        
+    }
+
+    private void EditProjectClicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void RemoveProjectClicked(object sender, EventArgs e)
+    {
+
+    }
 }

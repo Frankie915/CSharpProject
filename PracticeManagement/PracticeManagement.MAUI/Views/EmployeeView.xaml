@@ -21,6 +21,7 @@
     <VerticalStackLayout Spacing="20">
         <SearchBar Text="{Binding Query, Mode=TwoWay}"></SearchBar>
 
+
         <!--CLIENTS-->
         <VerticalStackLayout IsVisible="{Binding IsClientsVisible}"
                              Spacing="30" >
@@ -58,9 +59,13 @@
                 VerticalOptions="Center"
                 HorizontalOptions="Center" />
 
+                Text="Projects"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+
             <ListView
                 ItemsSource="{Binding Projects}"
-                SelectedItem="{Binding SelectedProject}" />
+                SelectedItem="{Binding SelecedProject}" />
 
             <Button
             WidthRequest="550"
@@ -71,14 +76,15 @@
             <Button
             WidthRequest="550"
             HeightRequest="60"
+
             Text="Edit Project" 
-                Clicked="EditProjectClicked"/>
+            Clicked="EditProjectClicked"/>
 
             <Button
             WidthRequest="550"
             HeightRequest="60"
             Text="Remove Project" 
-                Clicked="RemoveProjectClicked"/>
+            Clicked="RemoveProjectClicked"/>
 
             <Button
             WidthRequest="550"
@@ -87,7 +93,6 @@
             Clicked="CancelClicked"/>
         </VerticalStackLayout>
 
-        
 
         
     </VerticalStackLayout>

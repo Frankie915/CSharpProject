@@ -12,6 +12,7 @@ namespace PracticeManagement.MAUI.ViewModels
 	{
 		public EmployeeViewViewModel()
 		{
+
 			IsProjectsVisible = false;
 			IsClientsVisible = true;
 			IsTeamVisible = false;
@@ -52,10 +53,12 @@ namespace PracticeManagement.MAUI.ViewModels
             }
         }
 
+
         public Client SelectedClient { get; set; }
 
         public Project SelectedProject { get; set; }
        
+
         public bool IsProjectsVisible { get; set; }
 
 		public bool IsClientsVisible { get; set; }
@@ -68,6 +71,7 @@ namespace PracticeManagement.MAUI.ViewModels
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
 
         public void ShowClients()
         {
@@ -102,6 +106,7 @@ namespace PracticeManagement.MAUI.ViewModels
             NotifyPropertyChanged("IsProjectsVisible");
             NotifyPropertyChanged("IsTeamVisible");
         }
+
 
         public void ResetView()
         {
