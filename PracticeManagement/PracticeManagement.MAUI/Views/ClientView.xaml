@@ -34,19 +34,26 @@
                 WidthRequest="550"
                 HeightRequest="60"
                 Text="Add Client" 
-                Clicked="AddClientClicked"/>
+                Clicked="AddClientClicked" />
 
             <Button
+                
             WidthRequest="550"
             HeightRequest="60"
             Text="Edit Client" 
-                Clicked="EditClientClicked"/>
+                Clicked="EditClientClicked" />
 
             <Button
             WidthRequest="550"
             HeightRequest="60"
             Text="Remove Client" 
-                Clicked="RemoveClientClicked"/>
+                Clicked="RemoveClientClicked" />
+
+            <Button
+            WidthRequest="550"
+            HeightRequest="60"
+           Text="Cancel"
+            Clicked="CancelClicked"/>
         </VerticalStackLayout>
         <!--PROJECTS-->
         <VerticalStackLayout IsVisible="{Binding IsProjectsVisible}"
