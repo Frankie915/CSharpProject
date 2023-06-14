@@ -18,7 +18,6 @@ namespace PracticeManagement.MAUI.ViewModels
 
             IsProjectsVisible = false;
             IsClientsVisible = true;
-            IsTeamVisible = false;
 
         }
 
@@ -66,8 +65,6 @@ namespace PracticeManagement.MAUI.ViewModels
 
         public bool IsClientsVisible { get; set; }
 
-        public bool IsTeamVisible { get; set; }
-
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
@@ -80,11 +77,10 @@ namespace PracticeManagement.MAUI.ViewModels
         {
             IsClientsVisible = true;
             IsProjectsVisible = false;
-            IsTeamVisible = false;
+            
 
             NotifyPropertyChanged("IsClientsVisible");
             NotifyPropertyChanged("IsProjectsVisible");
-            NotifyPropertyChanged("IsTeamVisible");
 
         }
 
@@ -92,22 +88,18 @@ namespace PracticeManagement.MAUI.ViewModels
         {
             IsClientsVisible = false;
             IsProjectsVisible = true;
-            IsTeamVisible = false;
 
             NotifyPropertyChanged("IsClientsVisible");
             NotifyPropertyChanged("IsProjectsVisible");
-            NotifyPropertyChanged("IsTeamVisible");
         }
 
         public void ShowTeam()
         {
             IsClientsVisible = false;
             IsProjectsVisible = false;
-            IsTeamVisible = true;
 
             NotifyPropertyChanged("IsClientsVisible");
             NotifyPropertyChanged("IsProjectsVisible");
-            NotifyPropertyChanged("IsTeamVisible");
         }
 
 
