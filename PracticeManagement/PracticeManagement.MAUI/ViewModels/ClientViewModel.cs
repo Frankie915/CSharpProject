@@ -126,6 +126,17 @@ namespace PracticeManagement.MAUI.ViewModels
             s.GoToAsync($"//PersonDetail?personId={idParam}");
         }
 
+        public void RemoveClientClick()
+        {
+            if(SelectedClient != null)
+            {
+                ClientService.Current.Delete(SelectedClient.Id);
+                SelectedClient = null;
+                NotifyPropertyChanged(nameof(Clients));
+                NotifyPropertyChanged(nameof(SelectedClient));
+            }
+        }
+
 
     }
 }

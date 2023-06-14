@@ -57,5 +57,6 @@ public partial class ClientView : ContentPage
 
     void RemoveClientClicked(System.Object sender, System.EventArgs e)
     {
+        (BindingContext as ClientViewModel).RemoveClientClick();
     }
 }
