@@ -32,14 +32,10 @@ namespace PracticeManagement.MAUI
             (BindingContext as MainViewModel).Search();
         }
         */
-        private void ClientClicked(object sender, EventArgs e)
+
+        private void ClientProjectClicked(object sender, EventArgs e)
         {
             Shell.Current.GoToAsync("//Client");
-        }
-
-        private void EmployeeClicked(object sender, EventArgs e)
-        {
-            Shell.Current.GoToAsync("//Employee");
         }
     }
 }   

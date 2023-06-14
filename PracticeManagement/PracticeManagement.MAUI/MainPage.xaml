@@ -64,14 +64,8 @@
 
                     <Button
                         HeightRequest="60"
-                Text="Client View"
-                Clicked="ClientClicked">
-                    </Button>
-
-                    <Button
-                        HeightRequest="60"
-                        Text="Employee View"
-                        Clicked="EmployeeClicked">
+                        Text="Clients and Projects"
+                        Clicked="ClientProjectClicked">
                     </Button>
 
                 </VerticalStackLayout>

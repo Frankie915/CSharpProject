@@ -52,7 +52,7 @@ namespace PracticeManagement.MAUI.ViewModels
                 refToUpdate.Name = Name;
                 refToUpdate.Notes = Notes;
             }
-            Shell.Current.GoToAsync("//Employee");
+            Shell.Current.GoToAsync("//Client");
         }
         public event PropertyChangedEventHandler PropertyChanged;
 

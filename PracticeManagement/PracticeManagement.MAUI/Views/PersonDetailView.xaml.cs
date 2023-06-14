@@ -23,7 +23,7 @@ public partial class PersonDetailView : ContentPage
 
     private void CancelClicked(object sender, EventArgs e)
     {
-        Shell.Current.GoToAsync("//Employee");
+        Shell.Current.GoToAsync("//Client");
     }
 
     private void OnLeaving(object sender, NavigatedFromEventArgs e)
