@@ -7,28 +7,28 @@ public partial class ClientView : ContentPage
     public ClientView()
     {
         InitializeComponent();
-        BindingContext = new ClientViewModel();
+    //BindingContext = new ClientViewViewModel();
     }
 
     void CancelClicked(System.Object sender, System.EventArgs e)
     {
         Shell.Current.GoToAsync("//MainPage");
     }
-
+    /*
     private void ContentPage_NavigatedTo(object sender, NavigatedToEventArgs e)
     {
         (BindingContext as ClientViewModel).ResetView();
         (BindingContext as ClientViewModel).RefreshView();
     }
-
+    */
     private void Toolbar_ClientsClicked(object sender, EventArgs e)
     {
-        (BindingContext as ClientViewModel).ShowClients();
+        (BindingContext as ClientViewViewModel).ShowClients();
     }
 
     private void Toolbar_ProjectsClicked(object sender, EventArgs e)
     {
-        (BindingContext as ClientViewModel).ShowProjects();
+        (BindingContext as ClientViewViewModel).ShowProjects();
     }
 
     private void AddProjectClicked(object sender, EventArgs e)
@@ -48,15 +48,21 @@ public partial class ClientView : ContentPage
 
     void AddClientClicked(System.Object sender, System.EventArgs e)
     {
-        (BindingContext as ClientViewModel).AddClientClick(Shell.Current);
+        Shell.Current.GoToAsync("//PersonDetail");
     }
 
     void EditClientClicked(System.Object sender, System.EventArgs e)
     {
     }
 
-    void RemoveClientClicked(System.Object sender, System.EventArgs e)
+    void DeleteClicked(System.Object sender, System.EventArgs e)
     {
-        (BindingContext as ClientViewModel).RemoveClientClick();
+        (BindingContext as ClientViewViewModel).RefreshClientList();
+    }
+
+    private void ContentPage_NavigatedTo(object sender, NavigatedToEventArgs e)
+    {
+        (BindingContext as ClientViewViewModel).ResetClientList();
+        (BindingContext as ClientViewViewModel).RefreshClientList();
     }
 }

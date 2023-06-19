@@ -1,9 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:PracticeManagement.MAUI.ViewModels"
              x:Class="PracticeManagement.MAUI.Views.ClientView"
              Title="Clients and Projects"
              NavigatedTo="ContentPage_NavigatedTo">
+    <ContentPage.BindingContext>
+        <vm:ClientViewViewModel/>
+    </ContentPage.BindingContext>
 
     <ContentPage.ToolbarItems>
         <ToolbarItem
@@ -29,7 +33,27 @@
 
             <ListView
                 ItemsSource="{Binding Clients}"
-                SelectedItem="{Binding SelectedClient}" />
+                SelectedItem="{Binding SelectedClient}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="12*"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="{Binding Path=Display}" />
+                                <Button Grid.Column="1"
+                                     Command="{Binding Path=DeleteCommand}"
+                                     CommandParameter="{Binding}"
+                                    Text="Delete" 
+                                    Clicked="DeleteClicked" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                
+            </ListView>
             <Button
                 WidthRequest="550"
                 HeightRequest="60"
@@ -43,11 +67,6 @@
             Text="Edit Client" 
                 Clicked="EditClientClicked" />
 
-            <Button
-            WidthRequest="550"
-            HeightRequest="60"
-            Text="Remove Client" 
-                Clicked="RemoveClientClicked" />
 
             <Button
             WidthRequest="550"

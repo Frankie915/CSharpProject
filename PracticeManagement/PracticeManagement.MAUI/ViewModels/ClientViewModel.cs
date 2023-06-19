@@ -8,17 +8,43 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace PracticeManagement.MAUI.ViewModels
 {
     public class ClientViewModel : INotifyPropertyChanged
     {
+        public Client Model { get; set; }
         public ClientViewModel()
         {
+
+            Model = new Client();
+            DeleteCommand = new Command((c) => ExecuteDelete((c as ClientViewModel).Model.Id));
 
             IsProjectsVisible = false;
             IsClientsVisible = true;
 
+        }
+
+        public ClientViewModel(Client client)
+        {
+            Model = client;
+            DeleteCommand = new Command((c) => ExecuteDelete((c as ClientViewModel).Model.Id));
+        }
+
+        public ICommand DeleteCommand { get; private set; }
+
+        public string Display
+        {
+            get
+            {
+                return Model.ToString() ?? string.Empty;
+            }
+        }
+
+        public void ExecuteDelete(int id)
+        {
+            ClientService.Current.Delete(id);
         }
 
         public ObservableCollection<Client> Clients
@@ -126,16 +152,7 @@ namespace PracticeManagement.MAUI.ViewModels
             s.GoToAsync($"//PersonDetail?personId={idParam}");
         }
 
-        public void RemoveClientClick()
-        {
-            if(SelectedClient != null)
-            {
-                ClientService.Current.Delete(SelectedClient.Id);
-                SelectedClient = null;
-                NotifyPropertyChanged(nameof(Clients));
-                NotifyPropertyChanged(nameof(SelectedClient));
-            }
-        }
+       
 
 
     }
