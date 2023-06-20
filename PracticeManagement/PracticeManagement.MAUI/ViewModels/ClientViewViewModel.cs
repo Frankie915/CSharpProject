@@ -1,4 +1,5 @@
-﻿using PracticeManagement.CLI.Models;
+﻿
+using PracticeManagement.CLI.Models;
 using PracticeManagement.Library.Services;
 using System;
 using System.Collections.Generic;
@@ -38,6 +39,7 @@ namespace PracticeManagement.MAUI.ViewModels
         {
             get
             {
+
                 return new ObservableCollection<ClientViewModel>
                     (ClientService.Current.Customers.Select(c => new ClientViewModel(c)).ToList());
             }
@@ -77,6 +79,20 @@ namespace PracticeManagement.MAUI.ViewModels
 
             NotifyPropertyChanged("IsClientsVisible");
             NotifyPropertyChanged("IsProjectsVisible");
+        }
+
+        public void AddClient(Shell s)
+        {
+            s.GoToAsync($"//PersonDetail?clientId=0");
+        }
+
+        public void EditClient(Shell s)
+        {
+           /* 
+            var idParam = SelectedClient?.Id ?? 0;
+            s.GoToAsync($"//PersonDetail?clientId={idParam}");
+            */
+            //NotifyPropertyChanged (nameof(Clients));
         }
 
         public void RemoveClientClick()

@@ -20,7 +20,7 @@ namespace PracticeManagement.MAUI.ViewModels
 
             Model = new Client();
             DeleteCommand = new Command((c) => ExecuteDelete((c as ClientViewModel).Model.Id));
-
+            EditCommand = new Command((c) => ExecuteEdit((c as ClientViewModel).Model.Id));
             IsProjectsVisible = false;
             IsClientsVisible = true;
 
@@ -30,9 +30,11 @@ namespace PracticeManagement.MAUI.ViewModels
         {
             Model = client;
             DeleteCommand = new Command((c) => ExecuteDelete((c as ClientViewModel).Model.Id));
+            EditCommand = new Command((c) => ExecuteEdit((c as ClientViewModel).Model.Id));
         }
 
         public ICommand DeleteCommand { get; private set; }
+        public ICommand EditCommand { get; private set; }
 
         public string Display
         {
@@ -47,6 +49,11 @@ namespace PracticeManagement.MAUI.ViewModels
             ClientService.Current.Delete(id);
         }
 
+        public void ExecuteEdit(int id)
+        {
+            Shell.Current.GoToAsync($"//PersonDetail?clientId={Model.Id}");
+        }
+        /*
         public ObservableCollection<Client> Clients
         {
             get
@@ -61,7 +68,7 @@ namespace PracticeManagement.MAUI.ViewModels
 
             }
         }
-
+        */
         public ObservableCollection<Project> Projects
         {
 
@@ -70,6 +77,7 @@ namespace PracticeManagement.MAUI.ViewModels
                 return new ObservableCollection<Project>(ProjectService.Current.Projects);
             }
         }
+        /*
         private string query;
         public string Query
         {
@@ -80,7 +88,7 @@ namespace PracticeManagement.MAUI.ViewModels
                 NotifyPropertyChanged(nameof(Clients));
             }
         }
-
+        */
 
         public Client SelectedClient { get; set; }
 
@@ -128,7 +136,7 @@ namespace PracticeManagement.MAUI.ViewModels
             NotifyPropertyChanged("IsProjectsVisible");
         }
 
-
+        /*
         public void ResetView()
         {
             Query = string.Empty;
@@ -152,7 +160,7 @@ namespace PracticeManagement.MAUI.ViewModels
             s.GoToAsync($"//PersonDetail?personId={idParam}");
         }
 
-       
+       */
 
 
     }

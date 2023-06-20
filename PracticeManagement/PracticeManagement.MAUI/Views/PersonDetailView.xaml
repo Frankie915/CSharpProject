@@ -10,13 +10,13 @@
             Text="Name"
             VerticalOptions="Center" 
             HorizontalOptions="Start" />
-        <Entry Text="{Binding Name, Mode=TwoWay}"/>
+        <Entry Text="{Binding Path=Name, Mode=TwoWay}"/>
 
         <Label
             Text="Notes"
             VerticalOptions="Center"
             HorizontalOptions="Start" />
-        <Entry Text="{Binding Notes, Mode=TwoWay}" />
+        <Entry Text="{Binding Path=Notes, Mode=TwoWay}" />
 
         <Button
             WidthRequest="550"

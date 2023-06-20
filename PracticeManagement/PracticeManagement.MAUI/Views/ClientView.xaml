@@ -20,7 +20,10 @@
 
     </ContentPage.ToolbarItems>
     <VerticalStackLayout Spacing="20">
-        <SearchBar Text="{Binding Query, Mode=TwoWay}"></SearchBar>
+       
+        
+        
+            
 
 
         <!--CLIENTS-->
@@ -31,6 +34,17 @@
                 VerticalOptions="Center"
                 HorizontalOptions="Center" />
 
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="12*" />
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <SearchBar Grid.Column="0" Text="{Binding Query, Mode=TwoWay}"></SearchBar>
+                <Button Grid.Column="1"
+            Text="Add"
+                Clicked="AddClicked" />
+            </Grid>
+
             <ListView
                 ItemsSource="{Binding Clients}"
                 SelectedItem="{Binding SelectedClient}">
@@ -39,11 +53,19 @@
                         <ViewCell>
                             <Grid>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="12*"/>
+                                    <ColumnDefinition Width="11*"/>
+                                    <ColumnDefinition/>
                                     <ColumnDefinition/>
                                 </Grid.ColumnDefinitions>
                                 <Label Grid.Column="0" Text="{Binding Path=Display}" />
+
                                 <Button Grid.Column="1"
+                                   Command="{Binding Path=EditCommand}"
+                                   CommandParameter="{Binding}"
+                                    Text="Edit" 
+                                    Clicked="EditClicked" />
+
+                                <Button Grid.Column="2"
                                      Command="{Binding Path=DeleteCommand}"
                                      CommandParameter="{Binding}"
                                     Text="Delete" 
@@ -52,20 +74,8 @@
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-                
-            </ListView>
-            <Button
-                WidthRequest="550"
-                HeightRequest="60"
-                Text="Add Client" 
-                Clicked="AddClientClicked" />
 
-            <Button
-                
-            WidthRequest="550"
-            HeightRequest="60"
-            Text="Edit Client" 
-                Clicked="EditClientClicked" />
+            </ListView>
 
 
             <Button
