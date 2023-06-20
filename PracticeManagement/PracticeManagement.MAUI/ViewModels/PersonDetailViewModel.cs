@@ -13,11 +13,61 @@ namespace PracticeManagement.MAUI.ViewModels
     public class PersonDetailViewModel : INotifyPropertyChanged
     {
         public Client Status { get; set; }
-        public string Name { get; set; }
+        public string Name { 
+            get
+            {
+                if (Status != null)
+                {
+                    return Status.Name;
+                }
+                return string.Empty;
+            }
+            set
+            {
+                if (Status != null && Status.Name != value)
+                {
+                    Status.Name = value;
+                }
+            }
+        }
 
-        public string Notes { get; set; }
+        public string Notes
+        {
+            get
+            {
+                if (Status != null)
+                {
+                    return Status.Notes;
+                }
+                return string.Empty;
+            }
+            set
+            {
+                if (Status != null && Status.Notes != value)
+                {
+                    Status.Notes = value;
+                }
+            }
+        }
 
-        public int Id { get; set; }
+        public int Id
+        {
+            get
+            {
+                if (Status != null)
+                {
+                    return Status.Id;
+                }
+                return 0;
+            }
+            set
+            {
+                if (Status != null && Status.Id != value)
+                {
+                    Status.Id = value;
+                }
+            }
+        }
 
         public PersonDetailViewModel(int id=0)
         {
