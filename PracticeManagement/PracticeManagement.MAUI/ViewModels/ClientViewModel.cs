@@ -51,7 +51,7 @@ namespace PracticeManagement.MAUI.ViewModels
 
         public void ExecuteEdit(int id)
         {
-            Shell.Current.GoToAsync($"//PersonDetail?clientId={Model.Id}");
+            Shell.Current.GoToAsync($"//PersonDetail?clientId={id}");
         }
         /*
         public ObservableCollection<Client> Clients

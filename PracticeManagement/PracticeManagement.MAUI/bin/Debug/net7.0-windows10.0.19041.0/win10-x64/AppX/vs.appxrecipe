@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\CMari\OneDrive\Desktop\GitHub\PracticePanther\PracticeManagement\PracticeManagement.MAUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-06-20T13:54:11.833</Modified>
+      <Modified>2023-06-23T01:33:29.218</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\PracticePanther\PracticeManagement\PracticeManagement.MAUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-06-20T13:54:11.526</Modified>
+      <Modified>2023-06-23T01:33:28.549</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\PracticePanther\PracticeManagement\PracticeManagement.MAUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\PracticeManagement.MAUI.runtimeconfig.json">
       <PackagePath>PracticeManagement.MAUI.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\PracticePanther\PracticeManagement\PracticeManagement.MAUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\PracticeManagement.MAUI.dll">
       <PackagePath>PracticeManagement.MAUI.dll</PackagePath>
-      <Modified>2023-06-20T13:54:10.687</Modified>
+      <Modified>2023-06-23T01:01:36.647</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\PracticePanther\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>PracticeManagement.MAUI.exe</PackagePath>
-      <Modified>2023-06-20T13:54:10.694</Modified>
+      <Modified>2023-06-23T01:01:36.672</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -919,11 +919,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\PracticePanther\PracticeManagement\PracticeManagement.Library\bin\Debug\net7.0\PracticeManagement.Library.dll">
       <PackagePath>PracticeManagement.Library.dll</PackagePath>
-      <Modified>2023-06-14T22:48:57.925</Modified>
+      <Modified>2023-06-23T01:00:17.545</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\PracticePanther\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\PracticeManagement.MAUI.deps.json">
       <PackagePath>PracticeManagement.MAUI.deps.json</PackagePath>
-      <Modified>2023-06-20T13:54:11.716</Modified>
+      <Modified>2023-06-23T01:33:29.026</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.86\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

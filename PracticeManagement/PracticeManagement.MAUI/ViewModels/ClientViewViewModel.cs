@@ -92,7 +92,7 @@ namespace PracticeManagement.MAUI.ViewModels
             var idParam = SelectedClient?.Id ?? 0;
             s.GoToAsync($"//PersonDetail?clientId={idParam}");
             */
-            //NotifyPropertyChanged (nameof(Clients));
+            NotifyPropertyChanged (nameof(Clients));
         }
 
         public void RemoveClientClick()
