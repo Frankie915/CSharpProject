@@ -9,13 +9,13 @@ namespace PracticeManagement.CLI.Models
 {
     public class Client
     {
-        private static int incrementId = 0;
+        //private static int incrementId = 0;
         
         public Client()
         {
             Name = string.Empty;
             Notes= string.Empty;
-            Id = ++incrementId;
+            //Id = ++incrementId;
         }
         public int Id { get; set; }
 

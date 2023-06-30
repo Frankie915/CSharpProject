@@ -18,7 +18,8 @@ public partial class PersonDetailView : ContentPage
 
     private void OkClicked(object sender, EventArgs e)
     {
-        (BindingContext as PersonDetailViewModel).AddClient();
+        (BindingContext as ClientViewModel).AddOrUpdate();
+        Shell.Current.GoToAsync("//Client");
     }
 
     private void CancelClicked(object sender, EventArgs e)
@@ -26,14 +27,12 @@ public partial class PersonDetailView : ContentPage
         Shell.Current.GoToAsync("//Client");
     }
 
-    private void OnLeaving(object sender, NavigatedFromEventArgs e)
-    {
-        BindingContext = null;
-    }
-
     private void OnArriving(object sender, NavigatedToEventArgs e)
     {
-        BindingContext = new PersonDetailViewModel(ClientId);
+        if(ClientId == 0)
+            BindingContext = new ClientViewModel();
+        else
+            BindingContext = new ClientViewModel(ClientId);
     }
 
 }

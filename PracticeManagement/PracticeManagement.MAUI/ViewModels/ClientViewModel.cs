@@ -15,12 +15,20 @@ namespace PracticeManagement.MAUI.ViewModels
     public class ClientViewModel : INotifyPropertyChanged
     {
         public Client Model { get; set; }
+
+        private void SetupCommands()
+        {
+            DeleteCommand = new Command((c) => ExecuteDelete((c as ClientViewModel).Model.Id));
+            EditCommand = new Command((c) => ExecuteEdit((c as ClientViewModel).Model.Id));
+            AddCommand = new Command(
+                (c) => ExecuteAdd());
+        }
         public ClientViewModel()
         {
 
             Model = new Client();
-            DeleteCommand = new Command((c) => ExecuteDelete((c as ClientViewModel).Model.Id));
-            EditCommand = new Command((c) => ExecuteEdit((c as ClientViewModel).Model.Id));
+            Model.Id = 0;
+            SetupCommands();
             IsProjectsVisible = false;
             IsClientsVisible = true;
 
@@ -29,13 +37,19 @@ namespace PracticeManagement.MAUI.ViewModels
         public ClientViewModel(Client client)
         {
             Model = client;
-            DeleteCommand = new Command((c) => ExecuteDelete((c as ClientViewModel).Model.Id));
-            EditCommand = new Command((c) => ExecuteEdit((c as ClientViewModel).Model.Id));
+            SetupCommands();
+        }
+
+        public ClientViewModel(int clientId)
+        {
+            Model = ClientService.Current.Get(clientId);
+            SetupCommands();
         }
 
         public ICommand DeleteCommand { get; private set; }
         public ICommand EditCommand { get; private set; }
 
+        public ICommand AddCommand { get; private set; }
         public string Display
         {
             get
@@ -53,22 +67,12 @@ namespace PracticeManagement.MAUI.ViewModels
         {
             Shell.Current.GoToAsync($"//PersonDetail?clientId={id}");
         }
-        /*
-        public ObservableCollection<Client> Clients
+
+        public void ExecuteAdd()
         {
-            get
-            {
-
-                var filteredList = ClientService
-                    .Current
-                    .Customers
-                    .Where(
-                    s => s.Name.ToUpper().Contains(Query?.ToUpper() ?? string.Empty));
-                return new ObservableCollection<Client>(filteredList);
-
-            }
+            Shell.Current.GoToAsync($"//PersonDetail?clientId=0");
         }
-        */
+
         public ObservableCollection<Project> Projects
         {
 
@@ -77,18 +81,6 @@ namespace PracticeManagement.MAUI.ViewModels
                 return new ObservableCollection<Project>(ProjectService.Current.Projects);
             }
         }
-        /*
-        private string query;
-        public string Query
-        {
-            get => query;
-            set
-            {
-                query = value;
-                NotifyPropertyChanged(nameof(Clients));
-            }
-        }
-        */
 
         public Client SelectedClient { get; set; }
 
@@ -136,31 +128,10 @@ namespace PracticeManagement.MAUI.ViewModels
             NotifyPropertyChanged("IsProjectsVisible");
         }
 
-        /*
-        public void ResetView()
+        public void AddOrUpdate()
         {
-            Query = string.Empty;
-            NotifyPropertyChanged(nameof(Query));
+            ClientService.Current.AddOrUpdate(Model);
         }
-
-        public void RefreshView()
-        {
-            NotifyPropertyChanged(nameof(Projects));
-        }
-
-        public void AddClientClick(Shell s)
-        {
-
-            s.GoToAsync($"//PersonDetail?personId=0");
-        }
-
-        public void EditClientClick(Shell s)
-        {
-            var idParam = SelectedClient?.Id ?? 0;
-            s.GoToAsync($"//PersonDetail?personId={idParam}");
-        }
-
-       */
 
 
     }

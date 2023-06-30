@@ -42,11 +42,12 @@ namespace PracticeManagement.Library.Services
         {
             get { return customers; }   
         }
-
+        /*
         public List<Client> Search(string query)
         {
             return Customers.Where(c => c.Name.ToUpper().Contains(query.ToUpper())).ToList();
         }
+        */
 
         public Client? GetById(int id)
         {
@@ -59,6 +60,22 @@ namespace PracticeManagement.Library.Services
             {
                 customers.Add(client);
             }
+        }
+
+        public void AddOrUpdate(Client c)
+        {
+            if (c.Id == 0)
+            {
+                //add
+                c.Id = LastId + 1;
+                Customers.Add(c);
+            }
+
+        }
+
+        public Client? Get(int id)
+        {
+            return Customers.FirstOrDefault(c => c.Id == id);
         }
 
         public void Delete(int id)
@@ -78,6 +95,21 @@ namespace PracticeManagement.Library.Services
         public void Read()
         {
             customers.ForEach(Console.WriteLine);
+        }
+
+        public IEnumerable<Client> Search(string query)
+        {
+            return Customers
+                .Where(c => c.Name.ToUpper()
+                    .Contains(query.ToUpper()));
+        }
+
+        private int LastId
+        {
+            get
+            {
+                return Customers.Any() ? Customers.Select(c => c.Id).Max() : 0;
+            }
         }
     }
 }

@@ -48,12 +48,14 @@ public partial class ClientView : ContentPage
 
     void AddClicked(System.Object sender, System.EventArgs e)
     {
-        (BindingContext as ClientViewViewModel).AddClient(Shell.Current);
+        //(BindingContext as ClientViewViewModel).AddClient(Shell.Current);
+        Shell.Current.GoToAsync($"//PersonDetail?clientId=0");
+        (BindingContext as ClientViewViewModel).RefreshClientList();
     }
 
     private void EditClicked(object sender, EventArgs e)
     {
-        (BindingContext as ClientViewViewModel).EditClient(Shell.Current);
+        (BindingContext as ClientViewViewModel).RefreshClientList();
     }
 
     void DeleteClicked(System.Object sender, System.EventArgs e)
@@ -67,5 +69,4 @@ public partial class ClientView : ContentPage
         (BindingContext as ClientViewViewModel).RefreshClientList();
     }
 
-    
 }

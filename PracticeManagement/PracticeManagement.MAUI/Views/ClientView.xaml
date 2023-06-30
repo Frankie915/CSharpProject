@@ -41,7 +41,8 @@
                 </Grid.ColumnDefinitions>
                 <SearchBar Grid.Column="0" Text="{Binding Query, Mode=TwoWay}"></SearchBar>
                 <Button Grid.Column="1"
-            Text="Add"
+                
+                Text="Add"
                 Clicked="AddClicked" />
             </Grid>
 
