@@ -63,6 +63,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Controls\SearchBarControl.xaml.cs">
+	    <DependentUpon>SearchBarControl.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\ClientView.xaml.cs">
 	    <DependentUpon>ClientView.xaml</DependentUpon>
 	  </Compile>
@@ -72,12 +75,15 @@
 	  <Compile Update="Views\ProjectView.xaml.cs">
 	    <DependentUpon>ProjectView.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="Views\TimeView.xaml.cs">
-	    <DependentUpon>TimeView.xaml</DependentUpon>
+	  <Compile Update="Views\TimerView.xaml.cs">
+	    <DependentUpon>TimerView.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Controls\SearchBarControl.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\ClientView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -87,10 +93,13 @@
 	  <MauiXaml Update="Views\PersonDetailView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\ProjectDetailView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\ProjectView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\TimeView.xaml">
+	  <MauiXaml Update="Views\TimerView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

@@ -39,14 +39,23 @@ namespace PracticeManagement.Library.Services
 
         public Project? Get(int id)
         {
-            return projects.FirstOrDefault(c => c.Id == id);
+            return projects.FirstOrDefault(p => p.Id == id);
         }
 
         public void Add(Project? project)
         {
-            if (project != null)
+            if (project.Id == 0)
             {
-                projects.Add(project);
+                project.Id = LastId + 1;
+            }
+            projects.Add(project);
+        }
+
+        private int LastId
+        {
+            get
+            {
+                return Projects.Any() ? Projects.Select(c => c.Id).Max() : 0;
             }
         }
 

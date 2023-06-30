@@ -33,6 +33,8 @@ public partial class PersonDetailView : ContentPage
             BindingContext = new ClientViewModel();
         else
             BindingContext = new ClientViewModel(ClientId);
+
+        (BindingContext as ClientViewModel).RefreshProjects();
     }
 
 }

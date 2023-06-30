@@ -9,6 +9,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace PracticeManagement.MAUI.ViewModels
 {
@@ -16,34 +17,37 @@ namespace PracticeManagement.MAUI.ViewModels
     {
         public ClientViewViewModel()
         {
+            SearchCommand = new Command(ExecuteSearchCommand);
             IsClientsVisible = true;
             IsProjectsVisible = false;
         }
         public Client SelectedClient { get; set; }
 
+        public ICommand SearchCommand { get; private set; }
+
+        public void ExecuteSearchCommand()
+        {
+            NotifyPropertyChanged(nameof(Clients));
+        }
+
         public bool IsProjectsVisible { get; set; }
 
         public bool IsClientsVisible { get; set; }
 
-        private string query;
-        public string Query
-        {
-            get => query;
-            set
-            {
-                query = value;
-                NotifyPropertyChanged(nameof(Clients));
-            }
-        }
+        //private string query;
+        public string Query { get; set; }
         public ObservableCollection<ClientViewModel> Clients
         {
             get
             {
-
-                return new ObservableCollection<ClientViewModel>
-                    (ClientService.Current.Customers.Select(c => new ClientViewModel(c)).ToList());
+                return
+                    new ObservableCollection<ClientViewModel>
+                    (ClientService
+                        .Current.Search(Query ?? string.Empty)
+                        .Select(c => new ClientViewModel(c)).ToList());
             }
         }
+
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
         {
@@ -81,19 +85,6 @@ namespace PracticeManagement.MAUI.ViewModels
             NotifyPropertyChanged("IsProjectsVisible");
         }
 
-        public void AddClient(Shell s)
-        {
-            s.GoToAsync($"//PersonDetail?clientId=0");
-        }
-
-        public void EditClient(Shell s)
-        {
-           /* 
-            var idParam = SelectedClient?.Id ?? 0;
-            s.GoToAsync($"//PersonDetail?clientId={idParam}");
-            */
-            NotifyPropertyChanged (nameof(Clients));
-        }
 
         public void RemoveClientClick()
         {

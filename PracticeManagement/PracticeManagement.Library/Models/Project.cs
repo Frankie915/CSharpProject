@@ -16,14 +16,13 @@ namespace PracticeManagement.CLI.Models
 
         public Boolean IsActive { get; set; }
 
-        public string? ShortName { get; set; }
-        
-        public string? LongName { get; set; }
+        public Client? Client { get; set; }
+        public string? Name { get; set; }
         public int ClientId { get; set; }
 
         public override string ToString()
         {
-            return $"Project Id:{Id}. Client Id:{ClientId}. | Open Date: {OpenDate}";
+            return $"Project Id:{Id}\nClient Id:{ClientId};
         }
     }
 }

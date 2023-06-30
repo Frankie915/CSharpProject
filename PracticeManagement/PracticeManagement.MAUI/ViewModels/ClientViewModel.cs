@@ -20,8 +20,10 @@ namespace PracticeManagement.MAUI.ViewModels
         {
             DeleteCommand = new Command((c) => ExecuteDelete((c as ClientViewModel).Model.Id));
             EditCommand = new Command((c) => ExecuteEdit((c as ClientViewModel).Model.Id));
-            AddCommand = new Command(
-                (c) => ExecuteAdd());
+            AddProjectCommand = new Command(
+                (c) => ExecuteAddProject());
+            ShowProjectsCommand = new Command(
+                (c) => ExecuteShowProjects((c as ClientViewModel).Model.Id));
         }
         public ClientViewModel()
         {
@@ -29,8 +31,6 @@ namespace PracticeManagement.MAUI.ViewModels
             Model = new Client();
             Model.Id = 0;
             SetupCommands();
-            IsProjectsVisible = false;
-            IsClientsVisible = true;
 
         }
 
@@ -48,8 +48,9 @@ namespace PracticeManagement.MAUI.ViewModels
 
         public ICommand DeleteCommand { get; private set; }
         public ICommand EditCommand { get; private set; }
+        public ICommand AddProjectCommand { get; private set; }
+        public ICommand ShowProjectsCommand { get; private set; }
 
-        public ICommand AddCommand { get; private set; }
         public string Display
         {
             get
@@ -68,64 +69,45 @@ namespace PracticeManagement.MAUI.ViewModels
             Shell.Current.GoToAsync($"//PersonDetail?clientId={id}");
         }
 
-        public void ExecuteAdd()
+        public void ExecuteAddProject()
         {
-            Shell.Current.GoToAsync($"//PersonDetail?clientId=0");
+            AddOrUpdate(); //save the client so that we have an id to link the project to
+            //TODO: if we cancel the creation of this client, we need to delete it on cancel.
+            Shell.Current.GoToAsync($"//ProjectDetail?clientId={Model.Id}");
         }
 
-        public ObservableCollection<Project> Projects
+        public void ExecuteShowProjects(int id)
         {
+            Shell.Current.GoToAsync($"//Projects?clientId={id}");
+        }
 
+        public void RefreshProjects()
+        {
+            NotifyPropertyChanged(nameof(Projects));
+        }
+
+
+        public ObservableCollection<ProjectViewModel> Projects
+        {
             get
             {
-                return new ObservableCollection<Project>(ProjectService.Current.Projects);
+                //if this is a new client, we have no projects to return yet
+                if (Model == null || Model.Id == 0)
+                {
+                    return new ObservableCollection<ProjectViewModel>();
+                }
+                return new ObservableCollection<ProjectViewModel>(ProjectService
+                    .Current.Projects.Where(p => p.ClientId == Model.Id)
+                    .Select(r => new ProjectViewModel(r)));
             }
         }
 
-        public Client SelectedClient { get; set; }
-
-        public Project SelectedProject { get; set; }
-
-
-        public bool IsProjectsVisible { get; set; }
-
-        public bool IsClientsVisible { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-
-        public void ShowClients()
-        {
-            IsClientsVisible = true;
-            IsProjectsVisible = false;
-            
-
-            NotifyPropertyChanged("IsClientsVisible");
-            NotifyPropertyChanged("IsProjectsVisible");
-
-        }
-
-        public void ShowProjects()
-        {
-            IsClientsVisible = false;
-            IsProjectsVisible = true;
-
-            NotifyPropertyChanged("IsClientsVisible");
-            NotifyPropertyChanged("IsProjectsVisible");
-        }
-
-        public void ShowTeam()
-        {
-            IsClientsVisible = false;
-            IsProjectsVisible = false;
-
-            NotifyPropertyChanged("IsClientsVisible");
-            NotifyPropertyChanged("IsProjectsVisible");
         }
 
         public void AddOrUpdate()

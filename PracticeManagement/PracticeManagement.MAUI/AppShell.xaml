@@ -25,12 +25,12 @@
     <ShellContent
         Title="Projects"
         ContentTemplate="{DataTemplate local2:ProjectView}"
-        Route="Project" />
+        Route="Projects" />
 
     <ShellContent
-        Title="Time Details"
-        ContentTemplate="{DataTemplate local2:TimeView}"
-        Route="Time" />
+        Title="Project Details"
+        ContentTemplate="{DataTemplate local2:ProjectDetailView}"
+        Route="ProjectDetail" />
 
     <ShellContent
         Title="Person Details"
