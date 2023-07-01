@@ -11,4 +11,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="PracticeManagement.Library">
+      <HintPath>..\..\PracticeManagement.Library\bin\Debug\net7.0\PracticeManagement.Library.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

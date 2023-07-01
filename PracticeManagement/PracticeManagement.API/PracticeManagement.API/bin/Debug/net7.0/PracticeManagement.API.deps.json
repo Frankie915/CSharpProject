@@ -9,7 +9,8 @@
       "PracticeManagement.API/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": "7.0.5",
-          "Swashbuckle.AspNetCore": "6.4.0"
+          "Swashbuckle.AspNetCore": "6.4.0",
+          "PracticeManagement.Library": "1.0.0.0"
         },
         "runtime": {
           "PracticeManagement.API.dll": {}
@@ -72,6 +73,14 @@
             "fileVersion": "6.4.0.0"
           }
         }
+      },
+      "PracticeManagement.Library/1.0.0.0": {
+        "runtime": {
+          "PracticeManagement.Library.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -129,6 +138,11 @@
       "sha512": "sha512-1Hh3atb3pi8c+v7n4/3N80Jj8RvLOXgWxzix6w3OZhB7zBGRwsy7FWr4e3hwgPweSBpwfElqj4V4nkjYabH9nQ==",
       "path": "swashbuckle.aspnetcore.swaggerui/6.4.0",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+    },
+    "PracticeManagement.Library/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

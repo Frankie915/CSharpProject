@@ -31,3 +31,5 @@ C:\Users\CMari\OneDrive\Desktop\GitHub\PracticePanther\PracticeManagement\Practi
 C:\Users\CMari\OneDrive\Desktop\GitHub\PracticePanther\PracticeManagement\PracticeManagement.API\PracticeManagement.API\obj\Debug\net7.0\PracticeManagement.API.pdb
 C:\Users\CMari\OneDrive\Desktop\GitHub\PracticePanther\PracticeManagement\PracticeManagement.API\PracticeManagement.API\obj\Debug\net7.0\PracticeManagement.API.genruntimeconfig.cache
 C:\Users\CMari\OneDrive\Desktop\GitHub\PracticePanther\PracticeManagement\PracticeManagement.API\PracticeManagement.API\obj\Debug\net7.0\ref\PracticeManagement.API.dll
+C:\Users\CMari\OneDrive\Desktop\GitHub\PracticePanther\PracticeManagement\PracticeManagement.API\PracticeManagement.API\bin\Debug\net7.0\PracticeManagement.Library.dll
+C:\Users\CMari\OneDrive\Desktop\GitHub\PracticePanther\PracticeManagement\PracticeManagement.API\PracticeManagement.API\bin\Debug\net7.0\PracticeManagement.Library.pdb
