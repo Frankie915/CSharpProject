@@ -11,5 +11,10 @@ namespace PracticeManagement.API.Database
             new Client{Id = 2, Name = "Poox", Notes = "Smoll" },
             new Client{Id = 3, Name = "Ness", Notes = "Autistic" }
         };
+
+        public static int LastClientId => Clients.Any() ? Clients.Select(c => c.Id).Max() : 0;
+        
     }
 }
+
+

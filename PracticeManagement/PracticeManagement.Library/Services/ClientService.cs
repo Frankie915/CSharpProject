@@ -32,7 +32,7 @@ namespace PracticeManagement.Library.Services
         //private List<Client> customers;
         private ClientService()
         {
-            var response = new WebRequestHandler().Get("/Client/GetClients").Result;
+            var response = new WebRequestHandler().Get("/Client").Result;
             clients = JsonConvert.DeserializeObject<List<Client>>(response) ?? new List<Client>();
         }
 
@@ -44,22 +44,11 @@ namespace PracticeManagement.Library.Services
                 return clients ?? new List<Client>(); 
             }   
         }
-        /*
-        public List<Client> Search(string query)
-        {
-            return Customers.Where(c => c.Name.ToUpper().Contains(query.ToUpper())).ToList();
-        }
-        */
+        
 
         public void AddOrUpdate(Client c)
         {
-            if (c.Id == 0)
-            {
-                //add
-                c.Id = LastId + 1;
-                Customers.Add(c);
-            }
-
+            var response = new WebRequestHandler().Post("/Client", c).Result;
         }
 
         public Client? Get(int id)
