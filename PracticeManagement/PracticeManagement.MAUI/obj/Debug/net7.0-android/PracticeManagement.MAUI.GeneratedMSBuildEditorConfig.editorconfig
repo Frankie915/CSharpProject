@@ -12,75 +12,75 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = PracticeManagement.MAUI
-build_property.ProjectDir = C:\Users\CMari\OneDrive\Desktop\GitHub\PracticePanther\PracticeManagement\PracticeManagement.MAUI\
+build_property.ProjectDir = C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\
 
-[C:/Users/CMari/OneDrive/Desktop/GitHub/PracticePanther/PracticeManagement/PracticeManagement.MAUI/App.xaml]
+[C:/Users/CMari/OneDrive/Desktop/GitHub/CSharpProject/PracticeManagement/PracticeManagement.MAUI/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/CMari/OneDrive/Desktop/GitHub/PracticePanther/PracticeManagement/PracticeManagement.MAUI/AppShell.xaml]
+[C:/Users/CMari/OneDrive/Desktop/GitHub/CSharpProject/PracticeManagement/PracticeManagement.MAUI/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/CMari/OneDrive/Desktop/GitHub/PracticePanther/PracticeManagement/PracticeManagement.MAUI/Controls/SearchBarControl.xaml]
+[C:/Users/CMari/OneDrive/Desktop/GitHub/CSharpProject/PracticeManagement/PracticeManagement.MAUI/Controls/SearchBarControl.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Controls.SearchBarControl.xaml
 build_metadata.AdditionalFiles.TargetPath = Controls\SearchBarControl.xaml
 build_metadata.AdditionalFiles.RelativePath = Controls\SearchBarControl.xaml
 
-[C:/Users/CMari/OneDrive/Desktop/GitHub/PracticePanther/PracticeManagement/PracticeManagement.MAUI/MainPage.xaml]
+[C:/Users/CMari/OneDrive/Desktop/GitHub/CSharpProject/PracticeManagement/PracticeManagement.MAUI/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/CMari/OneDrive/Desktop/GitHub/PracticePanther/PracticeManagement/PracticeManagement.MAUI/Resources/Styles/Colors.xaml]
+[C:/Users/CMari/OneDrive/Desktop/GitHub/CSharpProject/PracticeManagement/PracticeManagement.MAUI/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/CMari/OneDrive/Desktop/GitHub/PracticePanther/PracticeManagement/PracticeManagement.MAUI/Resources/Styles/Styles.xaml]
+[C:/Users/CMari/OneDrive/Desktop/GitHub/CSharpProject/PracticeManagement/PracticeManagement.MAUI/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/CMari/OneDrive/Desktop/GitHub/PracticePanther/PracticeManagement/PracticeManagement.MAUI/Views/ClientView.xaml]
+[C:/Users/CMari/OneDrive/Desktop/GitHub/CSharpProject/PracticeManagement/PracticeManagement.MAUI/Views/ClientView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Views.ClientView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\ClientView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\ClientView.xaml
 
-[C:/Users/CMari/OneDrive/Desktop/GitHub/PracticePanther/PracticeManagement/PracticeManagement.MAUI/Views/EmployeeView.xaml]
+[C:/Users/CMari/OneDrive/Desktop/GitHub/CSharpProject/PracticeManagement/PracticeManagement.MAUI/Views/EmployeeView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Views.EmployeeView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\EmployeeView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\EmployeeView.xaml
 
-[C:/Users/CMari/OneDrive/Desktop/GitHub/PracticePanther/PracticeManagement/PracticeManagement.MAUI/Views/PersonDetailView.xaml]
+[C:/Users/CMari/OneDrive/Desktop/GitHub/CSharpProject/PracticeManagement/PracticeManagement.MAUI/Views/PersonDetailView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Views.PersonDetailView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\PersonDetailView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\PersonDetailView.xaml
 
-[C:/Users/CMari/OneDrive/Desktop/GitHub/PracticePanther/PracticeManagement/PracticeManagement.MAUI/Views/ProjectDetailView.xaml]
+[C:/Users/CMari/OneDrive/Desktop/GitHub/CSharpProject/PracticeManagement/PracticeManagement.MAUI/Views/ProjectDetailView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Views.ProjectDetailView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\ProjectDetailView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\ProjectDetailView.xaml
 
-[C:/Users/CMari/OneDrive/Desktop/GitHub/PracticePanther/PracticeManagement/PracticeManagement.MAUI/Views/ProjectView.xaml]
+[C:/Users/CMari/OneDrive/Desktop/GitHub/CSharpProject/PracticeManagement/PracticeManagement.MAUI/Views/ProjectView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Views.ProjectView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\ProjectView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\ProjectView.xaml
 
-[C:/Users/CMari/OneDrive/Desktop/GitHub/PracticePanther/PracticeManagement/PracticeManagement.MAUI/Views/TimerView.xaml]
+[C:/Users/CMari/OneDrive/Desktop/GitHub/CSharpProject/PracticeManagement/PracticeManagement.MAUI/Views/TimerView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Views.TimerView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\TimerView.xaml

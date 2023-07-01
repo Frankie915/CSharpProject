@@ -1,4 +1,6 @@
-﻿using PracticeManagement.CLI.Models;
+﻿using Newtonsoft.Json;
+using PP.Library.Utilities;
+using PracticeManagement.CLI.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,20 +29,20 @@ namespace PracticeManagement.Library.Services
             }
         }
 
-        private List<Client> customers;
+        //private List<Client> customers;
         private ClientService()
         {
-            customers = new List<Client>
-            {
-                new Client{Id = 1, Name = "Christian", Notes = "Unstable" },
-                new Client{Id = 2, Name = "Poox", Notes = "Smoll" },
-                new Client{Id = 3, Name = "Ness", Notes = "Autistic" }
-            };
+            var response = new WebRequestHandler().Get("/Client/GetClients").Result;
+            clients = JsonConvert.DeserializeObject<List<Client>>(response) ?? new List<Client>();
         }
+
+        private List<Client> clients;
 
         public List<Client> Customers
         {
-            get { return customers; }   
+            get {
+                return clients ?? new List<Client>(); 
+            }   
         }
         /*
         public List<Client> Search(string query)
@@ -48,19 +50,6 @@ namespace PracticeManagement.Library.Services
             return Customers.Where(c => c.Name.ToUpper().Contains(query.ToUpper())).ToList();
         }
         */
-
-        public Client? GetById(int id)
-        {
-            return customers.FirstOrDefault(c => c.Id == id);
-        }
-
-        public void Add(Client? client)
-        {
-            if(client != null)
-            {
-                customers.Add(client);
-            }
-        }
 
         public void AddOrUpdate(Client c)
         {
@@ -75,27 +64,21 @@ namespace PracticeManagement.Library.Services
 
         public Client? Get(int id)
         {
+            /*
+            var response = new WebRequestHandler().Get($"/Client/GetClients/{id}").Result;
+            var client = JsonConvert.DeserializeObject<Client>(response);*/
             return Customers.FirstOrDefault(c => c.Id == id);
         }
 
         public void Delete(int id)
         {
-            var clientToRemove = GetById(id);
-            if (clientToRemove != null)
+            var clientToDelete = Customers.FirstOrDefault(c => c.Id == id);
+            if (clientToDelete != null)
             {
-                customers.Remove(clientToRemove);
+                Customers.Remove(clientToDelete);
             }
         }
 
-        public void Delete(Client c)
-        {
-            Delete(c.Id);
-        }
-
-        public void Read()
-        {
-            customers.ForEach(Console.WriteLine);
-        }
 
         public IEnumerable<Client> Search(string query)
         {

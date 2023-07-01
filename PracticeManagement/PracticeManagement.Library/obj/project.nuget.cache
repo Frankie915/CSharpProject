@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Vdy85KkdrXjiFPDKyNlztwb3wRb/4Nj8g7cTnMO4my9hkY9LRxcr+V1fwnf+G64A1fL+GCLerw1C0CnxSEzFSA==",
+  "dgSpecHash": "2II3cCM8viryJxyVo9yWkx98KdkSwvTjjnRGk8coGHxG6GSdlORds648xZgO7MzJyCFOVODhkx5Fcc/GBmS+zA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\CMari\\OneDrive\\Desktop\\GitHub\\PracticePanther\\PracticeManagement\\PracticeManagement.Library\\PracticeManagement.Library.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\CMari\\OneDrive\\Desktop\\GitHub\\CSharpProject\\PracticeManagement\\PracticeManagement.Library\\PracticeManagement.Library.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\CMari\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

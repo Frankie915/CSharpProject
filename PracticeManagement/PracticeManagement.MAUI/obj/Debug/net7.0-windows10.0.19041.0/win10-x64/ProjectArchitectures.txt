@@ -1,1 +1,1 @@
-C:\Users\CMari\OneDrive\Desktop\GitHub\PracticePanther\PracticeManagement\PracticeManagement.MAUI\PracticeManagement.MAUI.csproj;x64
+C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\PracticeManagement.MAUI.csproj;x64

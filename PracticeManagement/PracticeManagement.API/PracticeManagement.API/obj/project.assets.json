@@ -466,11 +466,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CMari\\OneDrive\\Desktop\\GitHub\\PracticePanther\\PracticeManagement\\PracticeManagement.API\\PracticeManagement.API\\PracticeManagement.API.csproj",
+      "projectUniqueName": "C:\\Users\\CMari\\OneDrive\\Desktop\\GitHub\\CSharpProject\\PracticeManagement\\PracticeManagement.API\\PracticeManagement.API\\PracticeManagement.API.csproj",
       "projectName": "PracticeManagement.API",
-      "projectPath": "C:\\Users\\CMari\\OneDrive\\Desktop\\GitHub\\PracticePanther\\PracticeManagement\\PracticeManagement.API\\PracticeManagement.API\\PracticeManagement.API.csproj",
+      "projectPath": "C:\\Users\\CMari\\OneDrive\\Desktop\\GitHub\\CSharpProject\\PracticeManagement\\PracticeManagement.API\\PracticeManagement.API\\PracticeManagement.API.csproj",
       "packagesPath": "C:\\Users\\CMari\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CMari\\OneDrive\\Desktop\\GitHub\\PracticePanther\\PracticeManagement\\PracticeManagement.API\\PracticeManagement.API\\obj\\",
+      "outputPath": "C:\\Users\\CMari\\OneDrive\\Desktop\\GitHub\\CSharpProject\\PracticeManagement\\PracticeManagement.API\\PracticeManagement.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

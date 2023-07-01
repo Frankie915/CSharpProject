@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s4G3zSC1zz29U5mdt0OhxbQls/tof51CwGcAEqrlLA/UIWUOGt7mYx1w8BoT3bev3uM/CkWEfqR7FuyvTgY7Iw==",
+  "dgSpecHash": "ugTxygSj1c84y/nBEMeoQaz/n6k4w/7sRq+yWEE8DYjoWUeVFA2mwoG6c+WX5czfpLzVVwMErh+6N6J6eds0Rg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\CMari\\OneDrive\\Desktop\\GitHub\\PracticePanther\\PracticeManagement\\PracticeManagement.API\\PracticeManagement.API\\PracticeManagement.API.csproj",
+  "projectFilePath": "C:\\Users\\CMari\\OneDrive\\Desktop\\GitHub\\CSharpProject\\PracticeManagement\\PracticeManagement.API\\PracticeManagement.API\\PracticeManagement.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CMari\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
     "C:\\Users\\CMari\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

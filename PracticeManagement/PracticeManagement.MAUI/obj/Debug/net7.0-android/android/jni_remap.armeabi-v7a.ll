@@ -1,5 +1,5 @@
-; ModuleID = 'obj/Debug/net7.0-android/android/jni_remap.armeabi-v7a.ll'
-source_filename = "obj/Debug/net7.0-android/android/jni_remap.armeabi-v7a.ll"
+; ModuleID = 'obj\Debug\net7.0-android\android\jni_remap.armeabi-v7a.ll'
+source_filename = "obj\Debug\net7.0-android\android\jni_remap.armeabi-v7a.ll"
 target datalayout = "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64"
 target triple = "armv7-unknown-linux-android"
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "siZm7dFyR+NjdiOU0/EQEHN4MrdDDwM/C1M8HLRlCvtVACpdrOh8QFCmcio359K0qFDcnQxoiB6T+F96tTmyUw==",
+  "dgSpecHash": "ngMUGx5MuWnUzysMs2jjAH3QUUA5IczH5COdCup7tB5XP52jGfA15P1qfLUjW/qGyCSX8SD3R5Ci+FZUi+2DSg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\CMari\\OneDrive\\Desktop\\GitHub\\PracticePanther\\PracticeManagement\\PracticeManagement.MAUI\\PracticeManagement.MAUI.csproj",
+  "projectFilePath": "C:\\Users\\CMari\\OneDrive\\Desktop\\GitHub\\CSharpProject\\PracticeManagement\\PracticeManagement.MAUI\\PracticeManagement.MAUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CMari\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\CMari\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
@@ -19,6 +19,7 @@
     "C:\\Users\\CMari\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\7.0.86\\microsoft.maui.graphics.win2d.winui.desktop.7.0.86.nupkg.sha512",
     "C:\\Users\\CMari\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.755\\microsoft.windows.sdk.buildtools.10.0.22621.755.nupkg.sha512",
     "C:\\Users\\CMari\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\microsoft.windowsappsdk.1.2.221209.1.nupkg.sha512",
+    "C:\\Users\\CMari\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\CMari\\.nuget\\packages\\xamarin.android.glide\\4.13.2.2\\xamarin.android.glide.4.13.2.2.nupkg.sha512",
     "C:\\Users\\CMari\\.nuget\\packages\\xamarin.android.glide.annotations\\4.13.2.2\\xamarin.android.glide.annotations.4.13.2.2.nupkg.sha512",
     "C:\\Users\\CMari\\.nuget\\packages\\xamarin.android.glide.disklrucache\\4.13.2.2\\xamarin.android.glide.disklrucache.4.13.2.2.nupkg.sha512",

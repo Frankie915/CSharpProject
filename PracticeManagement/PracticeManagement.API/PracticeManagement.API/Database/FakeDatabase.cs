@@ -5,7 +5,7 @@ namespace PracticeManagement.API.Database
 {
     public static class FakeDatabase
     {
-        public static List<Client> clients = new List<Client>
+        public static List<Client> Clients = new List<Client>
         {
             new Client{Id = 1, Name = "Christian", Notes = "Unstable" },
             new Client{Id = 2, Name = "Poox", Notes = "Smoll" },
