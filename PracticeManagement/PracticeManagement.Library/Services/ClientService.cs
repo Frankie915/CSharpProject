@@ -1,8 +1,10 @@
 ﻿using Newtonsoft.Json;
 using PP.Library.Utilities;
 using PracticeManagement.CLI.Models;
+using PracticeManagement.Library.DTO;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,55 +35,63 @@ namespace PracticeManagement.Library.Services
         private ClientService()
         {
             var response = new WebRequestHandler().Get("/Client").Result;
-            clients = JsonConvert.DeserializeObject<List<Client>>(response) ?? new List<Client>();
+            clients = JsonConvert.DeserializeObject<List<ClientDTO>>(response) ?? new List<ClientDTO>();
         }
 
-        private List<Client> clients;
+        private List<ClientDTO> clients;
 
-        public List<Client> Customers
+        public List<ClientDTO> Clients
         {
             get {
-                return clients ?? new List<Client>(); 
+                return clients ?? new List<ClientDTO>(); 
             }   
         }
         
 
-        public void AddOrUpdate(Client c)
+        public void AddOrUpdate(ClientDTO c)
         {
             var response = new WebRequestHandler().Post("/Client", c).Result;
+            var myUpdatedClient = JsonConvert.DeserializeObject<ClientDTO>(response);
+            if(myUpdatedClient != null)
+            {
+                var existingClient = clients.FirstOrDefault(c => c.Id == myUpdatedClient.Id);
+                if(existingClient == null)
+                {
+                    clients.Add(myUpdatedClient);
+                }
+                else
+                {
+                    var index = clients.IndexOf(existingClient);
+                    clients.RemoveAt(index);
+                    clients.Insert(index, myUpdatedClient);
+                }
+            }
+
         }
 
-        public Client? Get(int id)
+        public ClientDTO? Get(int id)
         {
             /*
             var response = new WebRequestHandler().Get($"/Client/GetClients/{id}").Result;
             var client = JsonConvert.DeserializeObject<Client>(response);*/
-            return Customers.FirstOrDefault(c => c.Id == id);
+            return Clients.FirstOrDefault(c => c.Id == id);
         }
 
         public void Delete(int id)
         {
-            var clientToDelete = Customers.FirstOrDefault(c => c.Id == id);
+            var clientToDelete = Clients.FirstOrDefault(c => c.Id == id);
             if (clientToDelete != null)
             {
-                Customers.Remove(clientToDelete);
+                Clients.Remove(clientToDelete);
             }
         }
 
 
-        public IEnumerable<Client> Search(string query)
+        public IEnumerable<ClientDTO> Search(string query)
         {
-            return Customers
+            return Clients
                 .Where(c => c.Name.ToUpper()
                     .Contains(query.ToUpper()));
-        }
-
-        private int LastId
-        {
-            get
-            {
-                return Customers.Any() ? Customers.Select(c => c.Id).Max() : 0;
-            }
         }
     }
 }

@@ -1,7 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PracticeManagement.API.Database;
 using PracticeManagement.API.EC;
 using PracticeManagement.CLI.Models;
+using PracticeManagement.Library.DTO;
+using PracticeManagement.Library.Utilities;
 
 namespace PracticeManagement.API.Controllers
 { 
@@ -18,34 +19,35 @@ namespace PracticeManagement.API.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Client> Get()
+        public IEnumerable<ClientDTO> Get()
         {
-            return FakeDatabase.Clients;
+            return new ClientEC().Search();
         }
 
         [HttpGet("/{id}")]
 
-        public Client GetId(int id)
+        public ClientDTO? GetId(int id)
         {
-            return FakeDatabase.Clients.FirstOrDefault(c => c.Id == id) ?? new Client();
+            return new ClientEC().Get(id);
         }
 
         [HttpDelete("Delete/{id}")]
 
-        public Client? Delete(int id)
+        public ClientDTO? Delete(int id)
         {
-            var clientToDelete = FakeDatabase.Clients.FirstOrDefault(c => c.Id == id);
-            if (clientToDelete != null)
-            {
-                FakeDatabase.Clients.Remove(clientToDelete);
-            }
-            return clientToDelete;
+            return new ClientEC().Delete(id);
         }
 
         [HttpPost]
-        public Client AddOrUpdate([FromBody]Client client)
+        public ClientDTO AddOrUpdate([FromBody]ClientDTO client)
         {
             return new ClientEC().AddOrUpdate(client);
+        }
+
+        [HttpPost]
+        public IEnumerable<ClientDTO> Search([FromBody]QueryMessage query)
+        {
+            return new ClientEC().Search(query.Query);
         }
     }
 }

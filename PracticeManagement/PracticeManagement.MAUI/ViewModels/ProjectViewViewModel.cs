@@ -1,4 +1,5 @@
 ﻿using PracticeManagement.CLI.Models;
+using PracticeManagement.Library.DTO;
 using PracticeManagement.Library.Services;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace PracticeManagement.MAUI.ViewModels
 {
     public class ProjectViewViewModel
     {
-        public Client Client { get; set; }
+        public ClientDTO Client { get; set; }
         public ObservableCollection<Project> Projects
         {
             get
@@ -34,7 +35,7 @@ namespace PracticeManagement.MAUI.ViewModels
             }
             else
             {
-                Client = new Client();
+                Client = new ClientDTO();
             }
 
         }

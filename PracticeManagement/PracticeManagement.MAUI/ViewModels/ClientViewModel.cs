@@ -1,4 +1,5 @@
 ﻿using PracticeManagement.CLI.Models;
+using PracticeManagement.Library.DTO;
 using PracticeManagement.Library.Services;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,7 @@ namespace PracticeManagement.MAUI.ViewModels
 {
     public class ClientViewModel : INotifyPropertyChanged
     {
-        public Client Model { get; set; }
+        public ClientDTO Model { get; set; }
 
         private void SetupCommands()
         {
@@ -28,13 +29,13 @@ namespace PracticeManagement.MAUI.ViewModels
         public ClientViewModel()
         {
 
-            Model = new Client();
+            Model = new ClientDTO();
             Model.Id = 0;
             SetupCommands();
 
         }
 
-        public ClientViewModel(Client client)
+        public ClientViewModel(ClientDTO client)
         {
             Model = client;
             SetupCommands();
