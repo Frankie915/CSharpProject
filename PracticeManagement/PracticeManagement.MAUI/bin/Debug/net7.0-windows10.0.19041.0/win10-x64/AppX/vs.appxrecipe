@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-07-08T20:49:23.667</Modified>
+      <Modified>2023-07-09T00:36:36.439</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-07-01T19:10:34.008</Modified>
+      <Modified>2023-07-09T00:36:36.079</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\PracticeManagement.MAUI.runtimeconfig.json">
       <PackagePath>PracticeManagement.MAUI.runtimeconfig.json</PackagePath>
-      <Modified>2023-07-01T19:15:04.442</Modified>
+      <Modified>2023-07-09T00:36:35.812</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\PracticeManagement.MAUI.dll">
       <PackagePath>PracticeManagement.MAUI.dll</PackagePath>
-      <Modified>2023-07-08T20:49:22.147</Modified>
+      <Modified>2023-07-09T00:36:27.807</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>PracticeManagement.MAUI.exe</PackagePath>
-      <Modified>2023-07-08T20:49:22.156</Modified>
+      <Modified>2023-07-09T00:36:28.064</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -923,11 +923,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.Library\bin\Debug\net7.0\PracticeManagement.Library.dll">
       <PackagePath>PracticeManagement.Library.dll</PackagePath>
-      <Modified>2023-07-08T20:49:16.199</Modified>
+      <Modified>2023-07-09T00:36:07.259</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\PracticeManagement.MAUI.deps.json">
       <PackagePath>PracticeManagement.MAUI.deps.json</PackagePath>
-      <Modified>2023-07-08T20:49:23.367</Modified>
+      <Modified>2023-07-09T00:36:36.284</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.86\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -947,23 +947,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.303</Modified>
+      <Modified>2023-07-09T00:36:16.519</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.320</Modified>
+      <Modified>2023-07-09T00:36:16.532</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.337</Modified>
+      <Modified>2023-07-09T00:36:16.550</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.363</Modified>
+      <Modified>2023-07-09T00:36:16.576</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.463</Modified>
+      <Modified>2023-07-09T00:36:16.678</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -975,207 +975,207 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2023-07-01T19:10:27.512</Modified>
+      <Modified>2023-07-09T00:36:16.695</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.722</Modified>
+      <Modified>2023-07-09T00:36:27.226</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.732</Modified>
+      <Modified>2023-07-09T00:36:27.252</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.740</Modified>
+      <Modified>2023-07-09T00:36:27.261</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.755</Modified>
+      <Modified>2023-07-09T00:36:27.276</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.812</Modified>
+      <Modified>2023-07-09T00:36:27.330</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.571</Modified>
+      <Modified>2023-07-09T00:36:17.171</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.575</Modified>
+      <Modified>2023-07-09T00:36:17.175</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.587</Modified>
+      <Modified>2023-07-09T00:36:17.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.578</Modified>
+      <Modified>2023-07-09T00:36:17.612</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.581</Modified>
+      <Modified>2023-07-09T00:36:17.615</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.554</Modified>
+      <Modified>2023-07-09T00:36:17.144</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.556</Modified>
+      <Modified>2023-07-09T00:36:17.147</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.568</Modified>
+      <Modified>2023-07-09T00:36:17.167</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.559</Modified>
+      <Modified>2023-07-09T00:36:17.152</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.562</Modified>
+      <Modified>2023-07-09T00:36:17.157</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.524</Modified>
+      <Modified>2023-07-09T00:36:16.705</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.527</Modified>
+      <Modified>2023-07-09T00:36:16.708</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.530</Modified>
+      <Modified>2023-07-09T00:36:16.710</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.533</Modified>
+      <Modified>2023-07-09T00:36:16.713</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.537</Modified>
+      <Modified>2023-07-09T00:36:16.717</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.539</Modified>
+      <Modified>2023-07-09T00:36:16.719</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.541</Modified>
+      <Modified>2023-07-09T00:36:16.722</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.552</Modified>
+      <Modified>2023-07-09T00:36:16.733</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.544</Modified>
+      <Modified>2023-07-09T00:36:16.724</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.546</Modified>
+      <Modified>2023-07-09T00:36:16.727</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.630</Modified>
+      <Modified>2023-07-09T00:36:17.660</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.634</Modified>
+      <Modified>2023-07-09T00:36:17.664</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.639</Modified>
+      <Modified>2023-07-09T00:36:17.669</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.646</Modified>
+      <Modified>2023-07-09T00:36:17.676</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.660</Modified>
+      <Modified>2023-07-09T00:36:17.689</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.608</Modified>
+      <Modified>2023-07-09T00:36:17.639</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.611</Modified>
+      <Modified>2023-07-09T00:36:17.642</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.614</Modified>
+      <Modified>2023-07-09T00:36:17.645</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.617</Modified>
+      <Modified>2023-07-09T00:36:17.648</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.625</Modified>
+      <Modified>2023-07-09T00:36:17.655</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.591</Modified>
+      <Modified>2023-07-09T00:36:17.623</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.593</Modified>
+      <Modified>2023-07-09T00:36:17.626</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.596</Modified>
+      <Modified>2023-07-09T00:36:17.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.599</Modified>
+      <Modified>2023-07-09T00:36:17.632</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.604</Modified>
+      <Modified>2023-07-09T00:36:17.636</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.664</Modified>
+      <Modified>2023-07-09T00:36:19.035</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.669</Modified>
+      <Modified>2023-07-09T00:36:19.041</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.676</Modified>
+      <Modified>2023-07-09T00:36:19.048</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.686</Modified>
+      <Modified>2023-07-09T00:36:19.058</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.714</Modified>
+      <Modified>2023-07-09T00:36:27.217</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.558</Modified>
+      <Modified>2023-07-09T00:36:16.695</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.566</Modified>
+      <Modified>2023-07-09T00:36:16.703</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.577</Modified>
+      <Modified>2023-07-09T00:36:16.713</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.594</Modified>
+      <Modified>2023-07-09T00:36:16.729</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-07-01T19:10:27.635</Modified>
+      <Modified>2023-07-09T00:36:16.766</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
