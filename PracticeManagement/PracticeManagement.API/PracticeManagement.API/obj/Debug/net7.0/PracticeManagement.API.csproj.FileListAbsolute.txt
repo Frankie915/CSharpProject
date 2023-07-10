@@ -68,3 +68,4 @@ C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\Practice
 C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.API\PracticeManagement.API\obj\Debug\net7.0\PracticeManagement.API.pdb
 C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.API\PracticeManagement.API\obj\Debug\net7.0\PracticeManagement.API.genruntimeconfig.cache
 C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.API\PracticeManagement.API\obj\Debug\net7.0\ref\PracticeManagement.API.dll
+C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.API\PracticeManagement.API\bin\Debug\net7.0\Newtonsoft.Json.dll
