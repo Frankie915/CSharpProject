@@ -46,6 +46,9 @@ C:\Users\CMari\OneDrive\Desktop\GitHub\PracticePanther\PracticeManagement\Practi
 C:\Users\CMari\OneDrive\Desktop\GitHub\PracticePanther\PracticeManagement\PracticeManagement.Library\obj\Debug\net7.0\refint\PracticeManagement.Library.dll
 C:\Users\CMari\OneDrive\Desktop\GitHub\PracticePanther\PracticeManagement\PracticeManagement.Library\obj\Debug\net7.0\PracticeManagement.Library.pdb
 C:\Users\CMari\OneDrive\Desktop\GitHub\PracticePanther\PracticeManagement\PracticeManagement.Library\obj\Debug\net7.0\ref\PracticeManagement.Library.dll
+C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.Library\bin\Debug\net7.0\PracticeManagement.Library.deps.json
+C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.Library\bin\Debug\net7.0\PracticeManagement.Library.dll
+C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.Library\bin\Debug\net7.0\PracticeManagement.Library.pdb
 C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.Library\obj\Debug\net7.0\PracticeManagement.Library.csproj.AssemblyReference.cache
 C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.Library\obj\Debug\net7.0\PracticeManagement.Library.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.Library\obj\Debug\net7.0\PracticeManagement.Library.AssemblyInfoInputs.cache
@@ -54,7 +57,4 @@ C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\Practice
 C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.Library\obj\Debug\net7.0\PracticeManagement.Library.dll
 C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.Library\obj\Debug\net7.0\refint\PracticeManagement.Library.dll
 C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.Library\obj\Debug\net7.0\PracticeManagement.Library.pdb
-C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.Library\bin\Debug\net7.0\PracticeManagement.Library.deps.json
-C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.Library\bin\Debug\net7.0\PracticeManagement.Library.dll
-C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.Library\bin\Debug\net7.0\PracticeManagement.Library.pdb
 C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement.Library\obj\Debug\net7.0\ref\PracticeManagement.Library.dll

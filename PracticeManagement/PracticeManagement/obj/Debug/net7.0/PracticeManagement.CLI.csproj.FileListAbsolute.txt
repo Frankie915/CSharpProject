@@ -16,3 +16,11 @@ C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement
 C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement\obj\Debug\net7.0\PracticeManagement.CLI.pdb
 C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement\obj\Debug\net7.0\PracticeManagement.CLI.genruntimeconfig.cache
 C:\Users\CMari\Source\Repos\CSharpProjectt\PracticeManagement\PracticeManagement\obj\Debug\net7.0\ref\PracticeManagement.CLI.dll
+C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement\obj\Debug\net7.0\PracticeManagement.CLI.csproj.AssemblyReference.cache
+C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement\obj\Debug\net7.0\PracticeManagement.CLI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement\obj\Debug\net7.0\PracticeManagement.CLI.AssemblyInfoInputs.cache
+C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement\obj\Debug\net7.0\PracticeManagement.CLI.AssemblyInfo.cs
+C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement\obj\Debug\net7.0\PracticeManagement.CLI.csproj.CoreCompileInputs.cache
+C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement\obj\Debug\net7.0\PracticeManagement.CLI.dll
+C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement\obj\Debug\net7.0\refint\PracticeManagement.CLI.dll
+C:\Users\CMari\OneDrive\Desktop\GitHub\CSharpProject\PracticeManagement\PracticeManagement\obj\Debug\net7.0\PracticeManagement.CLI.pdb

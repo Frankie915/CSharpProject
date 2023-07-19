@@ -15,7 +15,7 @@
     <ShellContent
         Title="Client"
         ContentTemplate="{DataTemplate local2:ClientView}"
-        Route="Client"/>
+        Route="Client" />
 
     <ShellContent
         Title="Employee"
@@ -36,6 +36,11 @@
         Title="Person Details"
         ContentTemplate="{DataTemplate local2:PersonDetailView}"
         Route="PersonDetail" />
+
+    <ShellContent
+        Title="Time Entry"
+        ContentTemplate="{DataTemplate local2:TimeView}"
+        Route="Times" />
 
 
 </Shell>

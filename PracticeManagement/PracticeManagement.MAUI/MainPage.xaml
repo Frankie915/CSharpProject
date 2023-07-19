@@ -34,7 +34,7 @@
 
                     <Button
                         HeightRequest="60"
-                        Text="Manage Time"
+                        Text="Enter Time"
                         Clicked="TimeClicked" />
 
                 </VerticalStackLayout>

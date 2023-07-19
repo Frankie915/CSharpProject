@@ -28,7 +28,7 @@ namespace PracticeManagement.API.Database
 
         private Filebase()
         {
-            _root = "C:\\temp";
+            _root = @"C:\temp";
             _clientRoot = $"{_root}\\Clients";
             _projectRoot = $"{_root}\\Projects";
             //todo add support for employees, times, and bills
@@ -59,8 +59,9 @@ namespace PracticeManagement.API.Database
             //write the file
             File.WriteAllText(path, JsonConvert.SerializeObject(c));
 
-            //return the item, which now has an id
-            return c;
+
+                //return the item, which now has an id
+                return c;
         }
 
         public List<Client> Clients

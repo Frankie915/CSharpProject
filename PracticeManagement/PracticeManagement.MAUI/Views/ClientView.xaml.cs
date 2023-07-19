@@ -6,6 +6,7 @@ public partial class ClientView : ContentPage
 {
     public ClientView()
     {
+        
         InitializeComponent();
         BindingContext = new ClientViewViewModel();
     }
@@ -64,7 +65,7 @@ public partial class ClientView : ContentPage
 
     private void ContentPage_NavigatedTo(object sender, NavigatedToEventArgs e)
     {
-        (BindingContext as ClientViewViewModel).ResetClientList();
+       // (BindingContext as ClientViewViewModel).ResetClientList();
         (BindingContext as ClientViewViewModel).RefreshClientList();
     }
 
