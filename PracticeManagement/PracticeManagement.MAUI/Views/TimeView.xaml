@@ -7,8 +7,28 @@
     <VerticalStackLayout>
         <ListView
             ItemsSource="{Binding Times}">
-            
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="10*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="{Binding Path=Hours}"></Label>
+                            <Label Grid.Column="1" Text="{Binding Path=EmployeeId}"></Label>
+                            <Label Grid.Column="2" Text="{Binding Path=projectId}"></Label>
+                            <Label Grid.Column="3" Text="{Binding Path=Narrative}"></Label>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
-        <Button Clicked="CancelClicked"/>
+       
+        
+        <Button Text="Cancel" Clicked="CancelClicked"/>
     </VerticalStackLayout>
 </ContentPage>

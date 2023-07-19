@@ -45,7 +45,7 @@ namespace PracticeManagement.MAUI
 
         private void TimeClicked(object sender, EventArgs e)
         {
-            Shell.Current.GoToAsync("//Time");
+            Shell.Current.GoToAsync("//Times");
         }
     }
 }   
