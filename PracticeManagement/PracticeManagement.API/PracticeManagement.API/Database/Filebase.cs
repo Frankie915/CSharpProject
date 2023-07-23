@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 using PracticeManagement.API.EC;
-using PracticeManagement.CLI.Models;
+using PracticeManagement.Library.Models;
 using System.IO;
 
 namespace PracticeManagement.API.Database
@@ -68,7 +68,13 @@ namespace PracticeManagement.API.Database
         {
             get
             {
+                if (!Directory.Exists(_clientRoot))
+                {
+                    Directory.CreateDirectory(_clientRoot);
+                }
+                
                 var root = new DirectoryInfo(_clientRoot);
+                
                 var _clients = new List<Client>();
                 foreach (var clientFile in root.GetFiles())
                 {

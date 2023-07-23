@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 using PP.Library.Utilities;
-using PracticeManagement.CLI.Models;
+using PracticeManagement.Library.Models;
 using PracticeManagement.Library.DTO;
 using System;
 using System.Collections.Generic;

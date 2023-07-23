@@ -3,21 +3,34 @@ using PracticeManagement.Library.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace PracticeManagement.MAUI.ViewModels
 {
-    public class TimeViewViewModel
+    public class TimeViewViewModel : INotifyPropertyChanged
     {
-        public ObservableCollection<Time> Times
+        public ObservableCollection<TimeViewModel> Times
         {
             get
             {
-                return new ObservableCollection<Time>(TimeService.Current.Times);
+                return new ObservableCollection<TimeViewModel>(TimeService.Current.Times.Select(t => new TimeViewModel(t)));
             }
         }
-         
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public void RefreshTimes()
+        {
+            NotifyPropertyChanged("Times");
+        }
     }
 }

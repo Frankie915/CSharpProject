@@ -1,4 +1,4 @@
-﻿using PracticeManagement.CLI.Models;
+﻿using PracticeManagement.Library.Models;
 using PracticeManagement.Library.DTO;
 using PracticeManagement.Library.Services;
 using System;

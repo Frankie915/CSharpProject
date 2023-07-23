@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PracticeManagement.API.Database;
-using PracticeManagement.CLI.Models;
+using PracticeManagement.Library.Models;
 using PracticeManagement.Library.DTO;
 
 namespace PracticeManagement.API.EC

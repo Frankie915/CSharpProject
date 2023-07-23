@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.SignalR;
-using PracticeManagement.CLI.Models;
+using PracticeManagement.Library.Models;
 
 namespace PracticeManagement.API.Database
 {

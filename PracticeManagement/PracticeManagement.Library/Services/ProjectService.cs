@@ -1,4 +1,4 @@
-﻿using PracticeManagement.CLI.Models;
+﻿using PracticeManagement.Library.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +29,7 @@ namespace PracticeManagement.Library.Services
         private List<Project> projects;
         private ProjectService()
         {
-            projects = new List<Project>();
+            projects = new List<Project> { new Project { Id = 1, Name = "Test Project", ClientId = 1 } };
         }
 
         public List<Project> Projects

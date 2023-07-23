@@ -1,4 +1,4 @@
-using PracticeManagement.CLI.Models;
+using PracticeManagement.Library.Models;
 using PracticeManagement.MAUI.ViewModels;
 
 namespace PracticeManagement.MAUI.Views;

@@ -1,4 +1,4 @@
-﻿using PracticeManagement.CLI.Models;
+﻿using PracticeManagement.Library.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

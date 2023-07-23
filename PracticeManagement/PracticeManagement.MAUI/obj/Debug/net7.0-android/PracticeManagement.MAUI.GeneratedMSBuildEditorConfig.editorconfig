@@ -80,6 +80,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Vi
 build_metadata.AdditionalFiles.TargetPath = Views\ProjectView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\ProjectView.xaml
 
+[C:/Users/CMari/OneDrive/Desktop/GitHub/CSharpProject/PracticeManagement/PracticeManagement.MAUI/Views/TimeDetailView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Views.TimeDetailView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\TimeDetailView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\TimeDetailView.xaml
+
 [C:/Users/CMari/OneDrive/Desktop/GitHub/CSharpProject/PracticeManagement/PracticeManagement.MAUI/Views/TimerView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Views.TimerView.xaml

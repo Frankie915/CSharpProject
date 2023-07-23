@@ -1,4 +1,4 @@
-﻿using PracticeManagement.CLI.Models;
+﻿using PracticeManagement.Library.Models;
 using PracticeManagement.Library.Services;
 using System;
 using System.Collections.ObjectModel;

@@ -1,5 +1,4 @@
-﻿using PracticeManagement.CLI.Models;
-using PracticeManagement.Library.Models;
+﻿using PracticeManagement.Library.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,11 +30,15 @@ namespace PracticeManagement.Library.Services
         private TimeService()
         {
             times = new List<Time> {
-                new Time{Id = 1, EmployeeId = 0, ProjectId = 1, Hours = 1.75M, Narrative = "TEST TIME ENTRY" },
-                new Time{Id = 2, EmployeeId = 0, ProjectId = 1, Hours = 1.25M, Narrative = "TEST TIME ENTRY" } 
+                new Time{Id = 1, EmployeeId = 1, ProjectId = 1, Hours = 1.75M, Narrative = "TEST TIME ENTRY" },
+                new Time{Id = 2, EmployeeId = 1, ProjectId = 1, Hours = 1.25M, Narrative = "Another TIME ENTRY" } 
             };
         }
 
-
+        public Time AddOrUpdate(Time t)
+        {
+            times.Add(t);
+            return t;
+        }
     }
 }

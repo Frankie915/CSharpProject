@@ -18,4 +18,9 @@ public partial class TimeView : ContentPage
     {
         BindingContext = new TimeViewViewModel();
     }
+
+    private void AddClicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("//TimeDetail");
+    }
 }

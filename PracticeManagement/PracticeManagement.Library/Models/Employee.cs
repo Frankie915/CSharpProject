@@ -13,5 +13,7 @@ namespace PracticeManagement.Library.Models
         public decimal Rate { get; set; }
 
         public int Id { get; set; }
+
+        public override string ToString() => Name ?? string.Empty;
     }
 }
