@@ -46,7 +46,11 @@ namespace PracticeManagement.API.Database
             var path = $"{_clientRoot}\\{c.Id}.json";
 
             //if the item has been previously persisted
-            Delete(c.Id);
+            if (File.Exists(path))
+            {
+                //blow it up
+                File.Delete(path);
+            }
 
             //var path = $"{_clientRoot}\\{id}.json";
 
@@ -68,10 +72,10 @@ namespace PracticeManagement.API.Database
         {
             get
             {
-                if (!Directory.Exists(_clientRoot))
-                {
-                    Directory.CreateDirectory(_clientRoot);
-                }
+                //if (!Directory.Exists(_clientRoot))
+                //{
+                //    Directory.CreateDirectory(_clientRoot);
+                //}
                 
                 var root = new DirectoryInfo(_clientRoot);
                 

@@ -36,12 +36,12 @@
             </Grid.ColumnDefinitions>
 
             <Label Grid.Column="0" Text="Hours"></Label>
-            <Entry Grid.Column="1" Text="HOURS GOES HERE"></Entry>
+            <Entry Grid.Column="1" Text="{Binding HoursDisplay, Mode=TwoWay}"></Entry>
         </Grid>
 
 
         <Label Text="Narrative"></Label>
-        <Entry Text="NARRATIVE GOES HERE"/>
+        <Entry Text="{Binding Model.Narrative}"/>
         <Button Text="Ok" Clicked="OkClicked" />
         <Button Text="Cancel" Clicked="CancelClicked" />
 

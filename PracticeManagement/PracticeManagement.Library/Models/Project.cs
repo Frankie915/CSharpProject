@@ -22,7 +22,7 @@ namespace PracticeManagement.Library.Models
 
         public override string ToString()
         {
-            return $"Project Id:{Id}\nClient Id:{ClientId}";
+            return $"{Name}";
         }
     }
 }

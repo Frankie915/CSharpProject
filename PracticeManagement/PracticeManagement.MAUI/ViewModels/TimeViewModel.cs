@@ -24,11 +24,30 @@ namespace PracticeManagement.MAUI.ViewModels
             set
             {
                 employee = value;
-                Model.EmployeeId = employee.Id;
+                if(employee != null)
+                {
+                    Model.EmployeeId = employee.Id;
+                }
             }
         }
         public string EmployeeDisplay => Employee?.Name ?? string.Empty;
         private Project project;
+
+        public string HoursDisplay
+        {
+            get
+            {
+                return Model.Hours.ToString();
+
+            }
+            set
+            {
+                if(Decimal.TryParse(value, out decimal v))
+                {
+                    Model.Hours = v;
+                }
+            }
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -46,7 +65,10 @@ namespace PracticeManagement.MAUI.ViewModels
             set 
             {
                 project = value;
-                Model.ProjectId = project.Id;
+                if(project != null)
+                {
+                    Model.ProjectId = project.Id;
+                }
             }
 
         }
