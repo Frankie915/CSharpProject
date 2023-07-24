@@ -114,6 +114,7 @@ namespace PracticeManagement.MAUI.ViewModels
         public void AddOrUpdate()
         {
             ClientService.Current.AddOrUpdate(Model);
+            //NotifyPropertyChanged
         }
 
 

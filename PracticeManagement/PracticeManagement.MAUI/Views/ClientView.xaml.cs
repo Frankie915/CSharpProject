@@ -50,6 +50,7 @@ public partial class ClientView : ContentPage
     void AddClicked(System.Object sender, System.EventArgs e)
     {
         Shell.Current.GoToAsync($"//PersonDetail?clientId=0");
+        (BindingContext as ClientViewViewModel).ResetClientList();
         (BindingContext as ClientViewViewModel).RefreshClientList();
     }
 

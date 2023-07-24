@@ -55,8 +55,7 @@ namespace PracticeManagement.MAUI.ViewModels
 
         public void ResetClientList()
         {
-            Query = string.Empty;
-            NotifyPropertyChanged(nameof(Query));
+            ClientService.Current.ResetClientList();
         }
 
         public void RefreshClientList()

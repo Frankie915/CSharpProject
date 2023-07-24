@@ -65,6 +65,7 @@ namespace PracticeManagement.Library.Services
                     clients.RemoveAt(index);
                     clients.Insert(index, myUpdatedClient);
                 }
+                
             }
 
         }
@@ -74,11 +75,21 @@ namespace PracticeManagement.Library.Services
             /*
             var response = new WebRequestHandler().Get($"/Client/GetClients/{id}").Result;
             var client = JsonConvert.DeserializeObject<Client>(response);*/
+            
             return Clients.FirstOrDefault(c => c.Id == id);
+        }
+
+        public void ResetClientList()
+        {
+            var response = new WebRequestHandler().Get("/Client").Result;
+            clients = JsonConvert.DeserializeObject<List<ClientDTO>>(response) ?? new List<ClientDTO>();
         }
 
         public void Delete(int id)
         {
+
+            var response = new WebRequestHandler().Delete($"/Client/Delete/{id}").Result;
+           
             var clientToDelete = Clients.FirstOrDefault(c => c.Id == id);
             if (clientToDelete != null)
             {

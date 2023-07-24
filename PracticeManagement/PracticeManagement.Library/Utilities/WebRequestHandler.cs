@@ -44,7 +44,7 @@ namespace PP.Library.Utilities
             {
                 using (var client = new HttpClient())
                 {
-                    using (var request = new HttpRequestMessage(HttpMethod.Delete, url))
+                    using (var request = new HttpRequestMessage(HttpMethod.Delete, fullUrl))
                     {
                             using (var response = await client
                                 .SendAsync(request, HttpCompletionOption.ResponseHeadersRead)
