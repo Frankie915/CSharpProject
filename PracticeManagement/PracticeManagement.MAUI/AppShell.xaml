@@ -23,6 +23,11 @@
         Route="Employee" />
 
     <ShellContent
+        Title="Employee Detail"
+        ContentTemplate="{DataTemplate local2:EmployeeDetailView}"
+        Route="EmployeeDetail" />
+
+    <ShellContent
         Title="Projects"
         ContentTemplate="{DataTemplate local2:ProjectView}"
         Route="Projects" />

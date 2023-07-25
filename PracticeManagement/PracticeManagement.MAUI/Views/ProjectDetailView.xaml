@@ -13,7 +13,7 @@
             <Label Grid.Column="0"
             Padding="10"
             Text="Name" />
-            <Entry Grid.Column="1" Text="{Binding Path=Model.Name}"/>
+            <Entry Grid.Column="1" Text="{Binding Path=Model.Name,Mode=TwoWay}"/>
         </Grid>
         <Button Text="OK" Command="{Binding AddCommand}"/>
         <Button Text="Cancel" Clicked="CancelClicked"/>

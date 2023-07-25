@@ -4,28 +4,49 @@
              x:Class="PracticeManagement.MAUI.Views.TimeView"
              Title="TimeView"
              NavigatedTo="OnArriving">
-    <VerticalStackLayout>
+    <VerticalStackLayout Spacing="20">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="10*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" Text="Id"></Label>
+            <Label Grid.Column="1" Text="Hours"></Label>
+            <Label Grid.Column="2" Text="Employee"></Label>
+            <Label Grid.Column="3" Text="Project"></Label>
+            <Label Grid.Column="4" Text="Narrative"></Label>
+        </Grid>
         <ListView
             ItemsSource="{Binding Times}">
 
             <ListView.ItemTemplate>
                 <DataTemplate>
+                    
                     <ViewCell>
+                        
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition/>
                                 <ColumnDefinition/>
                                 <ColumnDefinition/>
-                                <ColumnDefinition Width="10*"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="8*"/>
                                 <ColumnDefinition/>
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
-                            <Label Grid.Column="0" Text="{Binding Path=Model.Hours}"></Label>
-                            <Label Grid.Column="1" Text="{Binding Path=EmployeeDisplay}"></Label>
-                            <Label Grid.Column="2" Text="{Binding Path=ProjectDisplay}"></Label>
-                            <Label Grid.Column="3" Text="{Binding Path=Model.Narrative}"></Label>
-                            <Button Grid.Column="4" Text="Edit" Clicked="EditClicked" Command="{Binding Path=EditCommand}" CommandParameter="{Binding}" />
-                            <Button Grid.Column="5" Text="Delete" Clicked="DeleteClicked" Command="{Binding Path=DeleteCommand}" CommandParameter="{Binding}" />
+                            <Label Grid.Column="0" Text="{Binding Path=Model.Id}"></Label>
+                            <Label Grid.Column="1" Text="{Binding Path=Model.Hours}"></Label>
+                            <Label Grid.Column="2" Text="{Binding Path=EmployeeDisplay}"></Label>
+                            <Label Grid.Column="3" Text="{Binding Path=ProjectDisplay}"></Label>
+                            <Label Grid.Column="4" Text="{Binding Path=Model.Narrative}"></Label>
+                            <Button Grid.Column="5" Text="Edit" Clicked="EditClicked" Command="{Binding Path=EditCommand}" CommandParameter="{Binding}" />
+                            <Button Grid.Column="6" Text="Delete" Clicked="DeleteClicked" Command="{Binding Path=DeleteCommand}" CommandParameter="{Binding}" />
+                            
                         </Grid>
                     </ViewCell>
                 </DataTemplate>

@@ -52,6 +52,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Vi
 build_metadata.AdditionalFiles.TargetPath = Views\ClientView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\ClientView.xaml
 
+[C:/Users/CMari/OneDrive/Desktop/GitHub/CSharpProject/PracticeManagement/PracticeManagement.MAUI/Views/EmployeeDetailView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Views.EmployeeDetailView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EmployeeDetailView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EmployeeDetailView.xaml
+
 [C:/Users/CMari/OneDrive/Desktop/GitHub/CSharpProject/PracticeManagement/PracticeManagement.MAUI/Views/EmployeeView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PracticeManagement.MAUI.Views.EmployeeView.xaml

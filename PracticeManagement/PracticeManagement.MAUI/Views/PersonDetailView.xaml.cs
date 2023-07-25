@@ -37,4 +37,13 @@ public partial class PersonDetailView : ContentPage
         (BindingContext as ClientViewModel).RefreshProjects();
     }
 
+    private void EditProjectClicked(object sender, EventArgs e)
+    {
+        (BindingContext as ClientViewModel).ExecuteEditProject();
+    }
+
+    private void DeleteProjectClicked(object sender, EventArgs e)
+    {
+        (BindingContext as ClientViewModel).RefreshProjects();
+    }
 }

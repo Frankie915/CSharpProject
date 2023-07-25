@@ -1,13 +1,20 @@
+using PracticeManagement.Library.Models;
 using PracticeManagement.MAUI.ViewModels;
 
 namespace PracticeManagement.MAUI.Views;
 
+[QueryProperty(nameof(TimeId), "timeId")]
 public partial class TimeDetailView : ContentPage
 {
 	public TimeDetailView()
 	{
 		InitializeComponent();
 	}
+
+    public int TimeId
+    {
+        set; get;
+    }
 
     private void CancelClicked(object sender, EventArgs e)
     {
@@ -16,8 +23,14 @@ public partial class TimeDetailView : ContentPage
 
     private void OnArriving(object sender, NavigatedToEventArgs e)
     {
-        BindingContext = new TimeViewModel();
-    }
+        
+            if (TimeId == 0)
+                BindingContext = new TimeViewModel();
+            else
+                BindingContext = new TimeViewModel(TimeId);
+
+            //(BindingContext as TimeViewViewModel).RefreshTimes();
+        }
 
     private void OkClicked(object sender, EventArgs e)
     {

@@ -23,6 +23,8 @@ namespace PracticeManagement.MAUI.ViewModels
             EditCommand = new Command((c) => ExecuteEdit((c as ClientViewModel).Model.Id));
             AddProjectCommand = new Command(
                 (c) => ExecuteAddProject());
+            EditProjectCommand = new Command(
+                (c) => ExecuteEditProject());
             ShowProjectsCommand = new Command(
                 (c) => ExecuteShowProjects((c as ClientViewModel).Model.Id));
         }
@@ -50,6 +52,7 @@ namespace PracticeManagement.MAUI.ViewModels
         public ICommand DeleteCommand { get; private set; }
         public ICommand EditCommand { get; private set; }
         public ICommand AddProjectCommand { get; private set; }
+        public ICommand EditProjectCommand { get; private set; }
         public ICommand ShowProjectsCommand { get; private set; }
 
         public string Display
@@ -74,6 +77,12 @@ namespace PracticeManagement.MAUI.ViewModels
         {
             AddOrUpdate(); //save the client so that we have an id to link the project to
             //TODO: if we cancel the creation of this client, we need to delete it on cancel.
+            Shell.Current.GoToAsync($"//ProjectDetail?clientId={Model.Id}");
+        }
+
+        public void ExecuteEditProject()
+        {
+            AddOrUpdate();
             Shell.Current.GoToAsync($"//ProjectDetail?clientId={Model.Id}");
         }
 

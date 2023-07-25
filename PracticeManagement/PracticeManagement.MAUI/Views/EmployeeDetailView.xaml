@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticeManagement.MAUI.Views.EmployeeDetailView"
+             Title="EmployeeDetailView"
+             NavigatedTo="OnArriving">
+    <VerticalStackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="11*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0"
+            Padding="10"
+            Text="Name" />
+            <Entry Grid.Column="1" Text="{Binding Path=Model.Name}"/>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="11*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0"
+            Padding="10"
+            Text="Rate" />
+            <Entry Grid.Column="1" Text="{Binding Path=Model.Rate}"/>
+        </Grid>
+        <Grid Padding="5" Margin="5">
+            <Label Text="Projects:"></Label>
+        </Grid>
+        
+        <Button
+            WidthRequest="550"
+            HeightRequest="60"
+            Text="Ok"
+            Clicked="OkClicked" />
+
+        <Button
+            WidthRequest="550"
+            HeightRequest="60"
+            Text="Cancel"
+            Clicked="CancelClicked" />
+    </VerticalStackLayout>
+</ContentPage>

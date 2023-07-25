@@ -12,7 +12,8 @@
             HorizontalTextAlignment="Center"/>
         <Grid>
             <Picker
-                ItemsSource="{Binding Path=Projects}"/>
+                ItemsSource="{Binding Path=Projects}"
+                />
         </Grid>
         <Label
             Text="{Binding TimerDisplay}"

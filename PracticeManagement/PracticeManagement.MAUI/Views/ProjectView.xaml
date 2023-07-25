@@ -8,10 +8,41 @@
             Text="{Binding Path=Client.Name}"
             VerticalOptions="Center" 
             HorizontalOptions="Start" />
+        <Label Grid.Column="0" Text="{Binding Path=Display}" />
         <ListView
             ItemsSource="{Binding Projects}"
+            SelectedItem="{Binding SelectedProject}"
             >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="10*"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="{Binding Path=Display}" />
+
+
+                            <Button Grid.Column="1"
+                                   Command="{Binding Path=EditCommand}"
+                                   CommandParameter="{Binding}"
+                                    Text="Edit" 
+                                    />
+
+                            <Button Grid.Column="2"
+                                     Command="{Binding Path=DeleteCommand}"
+                                     CommandParameter="{Binding}"
+                                    Text="Delete" 
+                                    />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
 
         </ListView>
+
+        <Button Text="Go back" Clicked="BackClicked" />
     </VerticalStackLayout>
 </ContentPage>

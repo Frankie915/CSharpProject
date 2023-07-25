@@ -1,10 +1,68 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:PracticeManagement.MAUI.ViewModels"
+             xmlns:c="clr-namespace:PracticeManagement.MAUI.Controls"
              x:Class="PracticeManagement.MAUI.Views.EmployeeView"
-             Title="Employees">
+             Title="Employees"
+             NavigatedTo="ContentPage_NavigatedTo">
 
     <VerticalStackLayout>
+
+            <Label
+                Text="Clients"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="12*" />
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <c:SearchBarControl Grid.Column="0"
+                                    QueryText="{Binding Query}"
+                                    SearchButtonText="Search"
+                                    SearchCommand="{Binding SearchCommand}"/>
+
+                <Button Grid.Column="1"
+                Text="Add"
+                        Command="{Binding Path=AddCommand}"
+                        CommandParameter="{Binding}"
+                Clicked="AddClicked" />
+            </Grid>
+
+        <ListView
+                ItemsSource="{Binding Employees}"
+                SelectedItem="{Binding SelectedEmployee}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="12*"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="{Binding Path=Display}" />
+
+                            <Button Grid.Column="1"
+                                   Command="{Binding Path=EditCommand}"
+                                   CommandParameter="{Binding}"
+                                    Text="Edit" 
+                                    Clicked="EditClicked" />
+
+                            <Button Grid.Column="2"
+                                     Command="{Binding Path=DeleteCommand}"
+                                     CommandParameter="{Binding}"
+                                    Text="Delete" 
+                                    Clicked="DeleteClicked" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
         <Button
             WidthRequest="550"
             HeightRequest="60"

@@ -42,17 +42,23 @@
         </Grid>
         <ListView
             ItemsSource="{Binding Projects}"
+            SelectedItem="{Binding SelectedProject}"
             >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <Grid>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="12*"/>
+                                <ColumnDefinition Width="10*"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
                             <Label Grid.Column="0" VerticalTextAlignment="Center" Text="{Binding Display}"></Label>
-                            <Button Grid.Column="1" Text="Timer" Command="{Binding TimerCommand}"/>
+                            <Button Grid.Column="1" Text="Edit" Clicked="EditProjectClicked"/>
+                            <Button Grid.Column="2" Text="Delete" Clicked="DeleteProjectClicked"
+                                    Command="{Binding DeleteProjectCommand}" CommandParameter="{Binding}"/>
+                            <Button Grid.Column="3" Text="Timer" Command="{Binding TimerCommand}"/>
                         </Grid>
                     </ViewCell>
                 </DataTemplate>

@@ -13,6 +13,8 @@ namespace PracticeManagement.MAUI.ViewModels
     public class ProjectViewViewModel
     {
         public ClientDTO Client { get; set; }
+
+        public Client SelectedProject { get; set; }
         public ObservableCollection<Project> Projects
         {
             get

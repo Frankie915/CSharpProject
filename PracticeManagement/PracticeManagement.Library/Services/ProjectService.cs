@@ -29,7 +29,8 @@ namespace PracticeManagement.Library.Services
         private List<Project> projects;
         private ProjectService()
         {
-            projects = new List<Project> { new Project { Id = 1, Name = "Test Project", ClientId = 1 } };
+            projects = new List<Project> { new Project { Id = 1, Name = "Project 1", ClientId = 3 },
+                                           new Project { Id = 2, Name = "Project 2", ClientId = 3 } };
         }
 
         public List<Project> Projects
@@ -39,16 +40,17 @@ namespace PracticeManagement.Library.Services
 
         public Project? Get(int id)
         {
-            return projects.FirstOrDefault(p => p.Id == id);
+            return  Projects.FirstOrDefault(p => p.Id == id);
         }
 
-        public void Add(Project? project)
+        public void AddOrUpdate(Project? project)
         {
             if (project.Id == 0)
             {
                 project.Id = LastId + 1;
+                projects.Add(project);
             }
-            projects.Add(project);
+
         }
 
         private int LastId

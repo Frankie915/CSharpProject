@@ -48,7 +48,7 @@ namespace PracticeManagement.MAUI.ViewModels
 
         public void ExecuteEdit(int id)
         {
-            Shell.Current.GoToAsync("//TimeDetail");
+            Shell.Current.GoToAsync($"//TimeDetail?timeId={id}");
         }
 
         public string EmployeeDisplay => Employee?.Name ?? string.Empty;
@@ -131,6 +131,12 @@ namespace PracticeManagement.MAUI.ViewModels
             {
                 Project = project;
             }
+            SetupCommands();
+        }
+
+        public TimeViewModel(int timeId)
+        {
+            Model = TimeService.Current.Get(timeId);
             SetupCommands();
         }
 

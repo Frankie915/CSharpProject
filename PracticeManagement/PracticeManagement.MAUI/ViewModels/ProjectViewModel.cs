@@ -15,6 +15,8 @@ namespace PracticeManagement.MAUI.ViewModels
         public Project Model { get; set; }
 
         public ICommand AddCommand { get; private set; }
+        public ICommand EditProjectCommand { get; private set; }
+        public ICommand DeleteProjectCommand { get; private set; }
         public ICommand TimerCommand { get; private set; }
 
         public string Display
@@ -27,8 +29,21 @@ namespace PracticeManagement.MAUI.ViewModels
 
         private void ExecuteAdd()
         {
-            ProjectService.Current.Add(Model);
+            ProjectService.Current.AddOrUpdate(Model);
             Shell.Current.GoToAsync($"//PersonDetail?clientId={Model.ClientId}");
+        }
+
+        public void ExecuteEdit()
+        {
+            ProjectService.Current.AddOrUpdate(Model);
+            Shell.Current.GoToAsync($"//PersonDetail?clientId={Model.ClientId}");
+        }
+
+        
+
+        public void ExecuteDelete()
+        {
+            ProjectService.Current.Delete(Model.Id);
         }
 
         private void ExecuteTimer()
@@ -50,6 +65,8 @@ namespace PracticeManagement.MAUI.ViewModels
         {
             AddCommand = new Command(ExecuteAdd);
             TimerCommand = new Command(ExecuteTimer);
+            EditProjectCommand = new Command(ExecuteEdit);
+            DeleteProjectCommand = new Command(ExecuteDelete);
         }
 
         public ProjectViewModel()

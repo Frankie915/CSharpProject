@@ -1,4 +1,5 @@
-﻿using PracticeManagement.Library.Models;
+﻿using PracticeManagement.Library.DTO;
+using PracticeManagement.Library.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -37,8 +38,31 @@ namespace PracticeManagement.Library.Services
 
         public Time AddOrUpdate(Time t)
         {
-            times.Add(t);
+
+            if (t.Id == 0)
+            {
+                t.Id = LastId + 1;
+                times.Add(t);
+            }
+
             return t;
+        }
+
+        private int LastId
+        {
+            get
+            {
+                return Times.Any() ? Times.Select(t => t.Id).Max() : 0;
+            }
+        }
+
+        public Time Get(int id)
+        {
+            /*
+            var response = new WebRequestHandler().Get($"/Client/GetClients/{id}").Result;
+            var client = JsonConvert.DeserializeObject<Client>(response);*/
+
+            return Times.FirstOrDefault(t => t.Id == id);
         }
 
         public void Delete(int id)
