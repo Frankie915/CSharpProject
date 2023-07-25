@@ -42,7 +42,7 @@ namespace PracticeManagement.MAUI.ViewModels
                 return
                     new ObservableCollection<ClientViewModel>
                     (ClientService
-                        .Current.Search(Query ?? string.Empty)
+                        .Current.Search(Query ?? string.Empty).OrderBy(c => c.Id)
                         .Select(c => new ClientViewModel(c)).ToList());
             }
         }
@@ -56,6 +56,7 @@ namespace PracticeManagement.MAUI.ViewModels
         public void ResetClientList()
         {
             ClientService.Current.ResetClientList();
+            NotifyPropertyChanged(nameof(Clients));
         }
 
         public void RefreshClientList()

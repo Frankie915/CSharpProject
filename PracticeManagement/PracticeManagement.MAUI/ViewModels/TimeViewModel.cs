@@ -9,6 +9,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace PracticeManagement.MAUI.ViewModels
 {
@@ -30,6 +31,26 @@ namespace PracticeManagement.MAUI.ViewModels
                 }
             }
         }
+
+        public ICommand DeleteCommand { get; private set; }
+        public ICommand EditCommand { get; private set; }
+        public void SetupCommands()
+        {
+            DeleteCommand = new Command((c) => ExecuteDelete((c as TimeViewModel).Model.Id));
+            EditCommand = new Command((c) => ExecuteEdit((c as TimeViewModel).Model.Id));
+
+        }
+
+        public void ExecuteDelete(int id)
+        {
+            TimeService.Current.Delete(id);
+        }
+
+        public void ExecuteEdit(int id)
+        {
+            Shell.Current.GoToAsync("//TimeDetail");
+        }
+
         public string EmployeeDisplay => Employee?.Name ?? string.Empty;
         private Project project;
 
@@ -93,6 +114,7 @@ namespace PracticeManagement.MAUI.ViewModels
         public TimeViewModel()
         {
             Model = new Time();
+            SetupCommands();
         }
 
         public TimeViewModel(Time t)
@@ -109,6 +131,7 @@ namespace PracticeManagement.MAUI.ViewModels
             {
                 Project = project;
             }
+            SetupCommands();
         }
 
         public void AddOrUpdate()

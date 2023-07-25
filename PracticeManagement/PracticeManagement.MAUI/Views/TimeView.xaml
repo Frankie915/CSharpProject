@@ -17,11 +17,15 @@
                                 <ColumnDefinition/>
                                 <ColumnDefinition/>
                                 <ColumnDefinition Width="10*"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
                             <Label Grid.Column="0" Text="{Binding Path=Model.Hours}"></Label>
                             <Label Grid.Column="1" Text="{Binding Path=EmployeeDisplay}"></Label>
                             <Label Grid.Column="2" Text="{Binding Path=ProjectDisplay}"></Label>
                             <Label Grid.Column="3" Text="{Binding Path=Model.Narrative}"></Label>
+                            <Button Grid.Column="4" Text="Edit" Clicked="EditClicked" Command="{Binding Path=EditCommand}" CommandParameter="{Binding}" />
+                            <Button Grid.Column="5" Text="Delete" Clicked="DeleteClicked" Command="{Binding Path=DeleteCommand}" CommandParameter="{Binding}" />
                         </Grid>
                     </ViewCell>
                 </DataTemplate>

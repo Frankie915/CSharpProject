@@ -8,6 +8,7 @@ using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Security.Cryptography.X509Certificates;
 
 namespace PracticeManagement.Library.Services
 {
@@ -84,6 +85,8 @@ namespace PracticeManagement.Library.Services
             var response = new WebRequestHandler().Get("/Client").Result;
             clients = JsonConvert.DeserializeObject<List<ClientDTO>>(response) ?? new List<ClientDTO>();
         }
+
+        
 
         public void Delete(int id)
         {

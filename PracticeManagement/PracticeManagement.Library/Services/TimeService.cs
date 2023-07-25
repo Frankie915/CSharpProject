@@ -40,5 +40,14 @@ namespace PracticeManagement.Library.Services
             times.Add(t);
             return t;
         }
+
+        public void Delete(int id)
+        {
+            var TimeToDelete = Times.FirstOrDefault(c => c.Id == id);
+            if (Times != null)
+            {
+                Times.Remove(TimeToDelete);
+            }
+        }
     }
 }

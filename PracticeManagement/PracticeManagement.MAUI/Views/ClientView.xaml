@@ -10,7 +10,7 @@
         <vm:ClientViewViewModel/>
     </ContentPage.BindingContext>
 
-    <ContentPage.ToolbarItems>
+    <!--<ContentPage.ToolbarItems>
         <ToolbarItem
             Text="Clients"
             Clicked="Toolbar_ClientsClicked" />
@@ -19,7 +19,7 @@
             Text="Projects"
             Clicked="Toolbar_ProjectsClicked" />
 
-    </ContentPage.ToolbarItems>
+    </ContentPage.ToolbarItems>-->
     <VerticalStackLayout Spacing="20">
        
         
@@ -28,8 +28,7 @@
 
 
         <!--CLIENTS-->
-        <VerticalStackLayout IsVisible="{Binding IsClientsVisible}"
-                             Spacing="30" >
+        <VerticalStackLayout Spacing="30" >
             <Label
                 Text="Clients"
                 VerticalOptions="Center"
@@ -99,7 +98,7 @@
             Clicked="CancelClicked"/>
         </VerticalStackLayout>
         <!--PROJECTS-->
-        <VerticalStackLayout IsVisible="{Binding IsProjectsVisible}"
+        <!--<VerticalStackLayout IsVisible="{Binding IsProjectsVisible}"
                              Spacing="30">
             <Label
                 Text="Projects"
@@ -134,7 +133,7 @@
             HeightRequest="60"
            Text="Cancel"
             Clicked="CancelClicked"/>
-        </VerticalStackLayout>
+        </VerticalStackLayout>-->
 
 
 

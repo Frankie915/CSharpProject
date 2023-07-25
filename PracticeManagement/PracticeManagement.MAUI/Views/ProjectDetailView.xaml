@@ -16,6 +16,7 @@
             <Entry Grid.Column="1" Text="{Binding Path=Model.Name}"/>
         </Grid>
         <Button Text="OK" Command="{Binding AddCommand}"/>
-        <Button Text="Cancel"/>
+        <Button Text="Cancel" Clicked="CancelClicked"/>
+        
     </VerticalStackLayout>
 </ContentPage>

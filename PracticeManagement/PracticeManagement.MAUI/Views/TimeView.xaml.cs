@@ -7,6 +7,7 @@ public partial class TimeView : ContentPage
 	public TimeView()
 	{
 		InitializeComponent();
+        BindingContext = new TimeViewViewModel();
 	}
 
     private void CancelClicked(object sender, EventArgs e)
@@ -22,5 +23,15 @@ public partial class TimeView : ContentPage
     private void AddClicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//TimeDetail");
+    }
+
+    private void DeleteClicked(object sender, EventArgs e)
+    {
+        (BindingContext as TimeViewViewModel).RefreshTimes();
+    }
+
+    private void EditClicked(object sender, EventArgs e)
+    {
+        (BindingContext as TimeViewViewModel).RefreshTimes();
     }
 }

@@ -15,4 +15,6 @@ public partial class ProjectView : ContentPage
     {
         BindingContext = new ProjectViewViewModel(ClientId);
     }
+
+    
 }

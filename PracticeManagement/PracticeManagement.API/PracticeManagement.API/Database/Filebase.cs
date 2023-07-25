@@ -72,11 +72,11 @@ namespace PracticeManagement.API.Database
         {
             get
             {
-                //if (!Directory.Exists(_clientRoot))
-                //{
-                //    Directory.CreateDirectory(_clientRoot);
-                //}
-                
+                if (!Directory.Exists(_clientRoot))
+                {
+                    Directory.CreateDirectory(_clientRoot);
+                }
+
                 var root = new DirectoryInfo(_clientRoot);
                 
                 var _clients = new List<Client>();

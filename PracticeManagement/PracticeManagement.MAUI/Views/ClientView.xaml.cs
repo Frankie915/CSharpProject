@@ -15,13 +15,7 @@ public partial class ClientView : ContentPage
     {
         Shell.Current.GoToAsync("//MainPage");
     }
-    /*
-    private void ContentPage_NavigatedTo(object sender, NavigatedToEventArgs e)
-    {
-        (BindingContext as ClientViewModel).ResetView();
-        (BindingContext as ClientViewModel).RefreshView();
-    }
-    */
+   
     private void Toolbar_ClientsClicked(object sender, EventArgs e)
     {
         (BindingContext as ClientViewViewModel).ShowClients();
@@ -66,7 +60,7 @@ public partial class ClientView : ContentPage
 
     private void ContentPage_NavigatedTo(object sender, NavigatedToEventArgs e)
     {
-       // (BindingContext as ClientViewViewModel).ResetClientList();
+        (BindingContext as ClientViewViewModel).ResetClientList();
         (BindingContext as ClientViewViewModel).RefreshClientList();
     }
 
