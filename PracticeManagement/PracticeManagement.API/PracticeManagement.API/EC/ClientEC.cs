@@ -38,7 +38,7 @@ namespace PracticeManagement.API.EC
             var clientToDelete = Filebase.Current.Clients.FirstOrDefault(c => c.Id == id);
             if (clientToDelete != null)
             {
-                Filebase.Current.Delete(clientToDelete.Id);
+                Filebase.Current.DeleteClient(clientToDelete.Id);
             }
             return clientToDelete != null ? new ClientDTO(clientToDelete) : null;
         }

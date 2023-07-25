@@ -12,15 +12,15 @@ namespace PracticeManagement.MAUI.ViewModels
 	public class EmployeeViewModel: INotifyPropertyChanged
 	{
 
-        public Employee Model { get; set; }
+        public EmployeeDTO Model { get; set; }
         public EmployeeViewModel()
 		{
-            Model = new Employee();
+            Model = new EmployeeDTO();
             Model.Id = 0;
             SetupCommands();
         }
 
-        public EmployeeViewModel(Employee employee)
+        public EmployeeViewModel(EmployeeDTO employee)
         {
             Model = employee;
             SetupCommands();

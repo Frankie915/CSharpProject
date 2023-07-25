@@ -1,4 +1,5 @@
-﻿using PracticeManagement.Library.Models;
+﻿using PracticeManagement.Library.DTO;
+using PracticeManagement.Library.Models;
 using PracticeManagement.Library.Models;
 using PracticeManagement.Library.Services;
 using System;
@@ -16,8 +17,8 @@ namespace PracticeManagement.MAUI.ViewModels
     public class TimeViewModel : INotifyPropertyChanged
     {
         public Time Model { get; set; }
-        private Employee employee;
-        public Employee Employee {
+        private EmployeeDTO employee;
+        public EmployeeDTO Employee {
             get
             {
                 return employee;
@@ -95,11 +96,11 @@ namespace PracticeManagement.MAUI.ViewModels
         }
         public string ProjectDisplay => Project?.Name ?? string.Empty;
 
-        public ObservableCollection<Employee> Employees
+        public ObservableCollection<EmployeeDTO> Employees
         {
             get
             {
-                return new ObservableCollection<Employee>(EmployeeService.Current.Employees);
+                return new ObservableCollection<EmployeeDTO>(EmployeeService.Current.Employees);
             }
         }
 

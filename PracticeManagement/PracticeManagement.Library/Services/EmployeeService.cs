@@ -1,4 +1,6 @@
-﻿using PracticeManagement.Library.DTO;
+﻿using Newtonsoft.Json;
+using PP.Library.Utilities;
+using PracticeManagement.Library.DTO;
 using PracticeManagement.Library.Models;
 using System;
 using System.Collections.Generic;
@@ -23,31 +25,45 @@ namespace PracticeManagement.Library.Services
             }
         }
 
-        private List<Employee> employees;
+        private List<EmployeeDTO> employees;
 
-        public List<Employee> Employees
+        public List<EmployeeDTO> Employees
         {
-            get { return employees; }
+            get { return employees ?? new List<EmployeeDTO>(); }
         }
+
+        public void ResetEmployeeList()
+        {
+            var response = new WebRequestHandler().Get("/Employee").Result;
+            employees = JsonConvert.DeserializeObject<List<EmployeeDTO>>(response) ?? new List<EmployeeDTO>();
+        }
+
         private EmployeeService()
         {
-            employees = new List<Employee>
-            {
-                new Employee{Id = 1, Name = "Frank Marino", Rate = 725M},
-                new Employee{Id = 2, Name = "Jonas Wilson", Rate = 293M}
-            };
+            var response = new WebRequestHandler().Get("/Employee").Result;
+            employees = JsonConvert.DeserializeObject<List<EmployeeDTO>>(response) ?? new List<EmployeeDTO>();
         }
 
-        public Employee AddOrUpdate(Employee e)
+        public void AddOrUpdate(EmployeeDTO c)
         {
-
-            if (e.Id == 0)
+            var response = new WebRequestHandler().Post("/Employee", c).Result;
+            var myUpdatedEmployee = JsonConvert.DeserializeObject<EmployeeDTO>(response);
+            if (myUpdatedEmployee != null)
             {
-                e.Id = LastId + 1;
-                employees.Add(e);
+                var existingEmployee = employees.FirstOrDefault(c => c.Id == myUpdatedEmployee.Id);
+                if (existingEmployee == null)
+                {
+                    employees.Add(myUpdatedEmployee);
+                }
+                else
+                {
+                    var index = employees.IndexOf(existingEmployee);
+                    employees.RemoveAt(index);
+                    employees.Insert(index, myUpdatedEmployee);
+                }
+
             }
 
-            return e;
         }
 
         private int LastId
@@ -58,12 +74,12 @@ namespace PracticeManagement.Library.Services
             }
         }
 
-        public Employee? Get(int id)
+        public EmployeeDTO? Get(int id)
         {
             return Employees.FirstOrDefault(e => e.Id == id);
         }
 
-        public IEnumerable<Employee> Search(string query)
+        public IEnumerable<EmployeeDTO> Search(string query)
         {
             return Employees
                 .Where(c => c.Name.ToUpper()
@@ -72,10 +88,12 @@ namespace PracticeManagement.Library.Services
 
         public void Delete(int id)
         {
-            var TimeToDelete = Employees.FirstOrDefault(e => e.Id == id);
-            if (Employees != null)
+            var response = new WebRequestHandler().Delete($"/Employee/Delete/{id}").Result;
+
+            var EmployeeToDelete = Employees.FirstOrDefault(c => c.Id == id);
+            if (EmployeeToDelete != null)
             {
-                Employees.Remove(TimeToDelete);
+                Employees.Remove(EmployeeToDelete);
             }
         }
     }
