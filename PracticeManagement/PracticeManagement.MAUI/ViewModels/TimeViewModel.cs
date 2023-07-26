@@ -16,7 +16,7 @@ namespace PracticeManagement.MAUI.ViewModels
 {
     public class TimeViewModel : INotifyPropertyChanged
     {
-        public Time Model { get; set; }
+        public TimeDTO Model { get; set; }
         private EmployeeDTO employee;
         public EmployeeDTO Employee {
             get
@@ -94,6 +94,8 @@ namespace PracticeManagement.MAUI.ViewModels
             }
 
         }
+
+        public Bill Bill { get; set; }
         public string ProjectDisplay => Project?.Name ?? string.Empty;
 
         public ObservableCollection<EmployeeDTO> Employees
@@ -114,11 +116,11 @@ namespace PracticeManagement.MAUI.ViewModels
 
         public TimeViewModel()
         {
-            Model = new Time();
+            Model = new TimeDTO();
             SetupCommands();
         }
 
-        public TimeViewModel(Time t)
+        public TimeViewModel(TimeDTO t)
         {
             Model = t;
             var employee = EmployeeService.Current.Get(t.EmployeeId);

@@ -18,6 +18,8 @@ public partial class TimeView : ContentPage
     private void OnArriving(object sender, NavigatedToEventArgs e)
     {
         BindingContext = new TimeViewViewModel();
+        (BindingContext as TimeViewViewModel).ResetTimeList();
+        (BindingContext as TimeViewViewModel).RefreshTimes();
     }
 
     private void AddClicked(object sender, EventArgs e)

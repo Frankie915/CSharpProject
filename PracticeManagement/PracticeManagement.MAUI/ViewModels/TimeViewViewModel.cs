@@ -28,6 +28,10 @@ namespace PracticeManagement.MAUI.ViewModels
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        public void ResetTimeList()
+        {
+            TimeService.Current.ResetTimeList();
+        }
         public void RefreshTimes()
         {
             NotifyPropertyChanged("Times");

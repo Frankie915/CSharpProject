@@ -24,7 +24,7 @@ namespace PracticeManagement.API.EC
             var TimeToDelete = Filebase.Current.Times.FirstOrDefault(t => t.Id == id);
             if (TimeToDelete != null)
             {
-                Filebase.Current.DeleteClient(TimeToDelete.Id);
+                Filebase.Current.DeleteTime(TimeToDelete.Id);
             }
             return TimeToDelete != null ? new TimeDTO(TimeToDelete) : null;
         }
