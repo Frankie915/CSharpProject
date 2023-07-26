@@ -14,6 +14,8 @@ public partial class ProjectView : ContentPage
     private void OnArriving(object sender, NavigatedToEventArgs e)
     {
         BindingContext = new ProjectViewViewModel(ClientId);
+        (BindingContext as EmployeeViewViewModel).ResetEmployeeList();
+        (BindingContext as EmployeeViewViewModel).RefreshEmployeeList();
     }
 
     private void BackClicked(object sender, EventArgs e)
